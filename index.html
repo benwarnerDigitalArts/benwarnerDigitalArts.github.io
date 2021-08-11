@@ -15,19 +15,19 @@ body {
 
 /* Style the header */
 header {
-  background-color: #000;
+  background-color: #666;
   padding: 15px;
   text-align: center;
   font-size: 20px;
   color: white;
 }
 
-/* Create two columns/boxes that floats next to each other */
+/* Create three columns/boxes that floats next to each other */
 nav {
   float: left;
-  width: 30%;
+  width: 10%;
   height: 300px; /* only for demonstration, should be removed */
-  background: #666;
+  background: #999;
   padding: 20px;
 }
 
@@ -40,10 +40,18 @@ nav ul {
 mainArea {
   float: left;
   padding: 20px;
-  width: 70%;
+  width: 80%;
   background-color: 'assets/starfield-field.jpg';
-  height: 300px; /* only for demonstration, should be removed */'
+  height: 300px; /* only for demonstration, should be removed */
   color: white;
+}
+  
+nav2 {
+  float: left;
+  width: 10%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #999;
+  padding: 20px;
 }
 
 /* Clear floats after the columns */
@@ -55,7 +63,7 @@ section::after {
 
 /* Style the footer */
 footer {
-  background-color: #000;
+  background-color: #666;
   padding: 10px;
   text-align: center;
   color: white;
@@ -95,13 +103,12 @@ footer {
     <li><a href="#">Other</a></li>
     
   </mainArea>
+  <nav2></nav2>
 </section>
 
 <footer>
-  <p>    
-    <li><a href="https://www.linkedin.com/in/benjamin-b-warner/">LinkedIn</a></li>
-    <li><a href="#">Art Station</a></li>
-    <li><a href="#">Other</a></li>
+  <p> 
+    <a href="https://www.linkedin.com/in/benjamin-b-warner/">LinkedIn</a> <a href="#">Art Station</a> <a href="#">Other</a>
   </p>
 </footer>
 
