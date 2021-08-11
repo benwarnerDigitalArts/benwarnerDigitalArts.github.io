@@ -24,9 +24,9 @@ header {
 
 /* Create three columns/boxes that floats next to each other */
 nav {
-  float: left;
-  width: 10%;
-  height: 300px; /* only for demonstration, should be removed */
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   background: #999;
   padding: 20px;
 }
@@ -38,18 +38,18 @@ nav ul {
 }
 
 mainArea {
-  float: left;
-  padding: 20px;
-  width: 80%;
-  background-color: "assets/starfield-field.jpg";
-  height: 300px; /* only for demonstration, should be removed */
+  -webkit-flex: 4;
+  -ms-flex: 4;
+  flex: 4;
+  padding: 10px;
+  background-image: "assets/starfield-field.jpg";
   color: white;
 }
   
 nav2 {
-  float: left;
-  width: 10%;
-  height: 300px; /* only for demonstration, should be removed */
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   background: #999;
   padding: 20px;
 }
