@@ -8,11 +8,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 * { box-sizing: border-box; }
-body { font-family: "Times New Roman", Times, serif; }
+body { 
+  font-family: "Times New Roman", Times, serif;
+  background-image: url('assets/starfield-field.jpg');
+}
 /* Style the header */
 .header {
   height: 10%;
   width: 100%;
+  position: fixed;
+  top: 0; left: 0;
   background-color: #666;
   padding: 6px 8px 6px 16px;
   text-align: center;
@@ -38,7 +43,7 @@ section {
   width: 160px;
   position: fixed;
   z-index: 1;
-  left: 0;
+  bottm: 0; left: 0;
   background-color: #111;
   overflow-x: hidden;
   padding-top: 20px;
