@@ -22,19 +22,6 @@ body {
   font-size: 25px;
   color: white;
 }
-/* Container for flexboxes */
-section {
-  display: -webkit-flex;
-  display: flex;
-}
-.mainArea {
-  -webkit-flex: 3.5;
-  -ms-flex: 3.5;
-  flex: 3.5;
-  padding: 10px;
-  background-color: #000;
-  color: white;
-}
 /* Fixed sidebar */
 .sidenav {
   height: 85%;
@@ -75,6 +62,8 @@ section::after {
   margin-left: 160px; /* Same as the width of the sidenav */
   font-size: 28px; /* Increased text to enable scrolling */
   padding: 0px 10px;
+  background-color: #000;
+  color: white;
 }
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
@@ -94,56 +83,45 @@ section::after {
   <a href="#other">Other</a>
   <a href="#contact">Contact</a>
 </div>
-<div class="main">
   <hr>
-  <section>
-    <div class="mainArea", id="about">
-      <hr>
-      <h1>About Me</h1>
-      <p>I am a Mechanical Engineer with a Bachelors Degree from Clemson University trying to improve the world by focusing on sustainable practices in my personal and professional life. I enjoy the prospect of working with new technologies, such as VR and 3D printing, and getting a chance to improve them further. I am proficient in multiple computer programming languages such as C++ and Python. I also am very well versed in design software such as SolidWorks and similar CAD.</p>
-      <p>In addition to my pursuits in the engineering field, I have begun honing my 3D design and programming skills through a Masters of Science in Digital Production Arts. In this program, I am able to optimize the use of my free time to develop my personal and professional interests in Digital Productions.</p>
-      <p>I work very well in a team environment and thrive in a setting where finding creative and innovative solutions is a daily challenge.</p>
-      <hr>
-    </div>
-  </section>
+  <div class="main", id="about">
+    <hr>
+    <h1>About Me</h1>
+    <p>I am a Mechanical Engineer with a Bachelors Degree from Clemson University trying to improve the world by focusing on sustainable practices in my personal and professional life. I enjoy the prospect of working with new technologies, such as VR and 3D printing, and getting a chance to improve them further. I am proficient in multiple computer programming languages such as C++ and Python. I also am very well versed in design software such as SolidWorks and similar CAD.</p>
+    <p>In addition to my pursuits in the engineering field, I have begun honing my 3D design and programming skills through a Masters of Science in Digital Production Arts. In this program, I am able to optimize the use of my free time to develop my personal and professional interests in Digital Productions.</p>
+    <p>I work very well in a team environment and thrive in a setting where finding creative and innovative solutions is a daily challenge.</p>
+    <hr>
+  </div>
   <hr>
-  <section>
-    <div class="mainArea", id="3Dworks">
-      <hr>
-      <h1>3D Works</h1>
-      <p>Nothing here yet!</p>
-      <hr>
-    </div>
-  </section>
+  <div class="main", id="3Dworks">
+    <hr>
+    <h1>3D Works</h1>
+    <p>Nothing here yet!</p>
+    <hr>
+  </div>
   <hr>
-  <section>
-    <div class="mainArea", id="2Dworks">
-      <hr>
-      <h1>2D Works</h1>
-      <p>Nothing here yet!</p>
-      <hr>
-    </div>
-  </section>
+  <div class="main", id="2Dworks">
+    <hr>
+    <h1>2D Works</h1>
+    <p>Nothing here yet!</p>
+    <hr>
+  </div>
   <hr>
-  <section>
-    <div class="mainArea", id="other">
-      <hr>
-      <h1>Other Works</h1>
-      <p>Nothing here yet!</p>
-      <hr>
-    </div>
-  </section>
+  <div class="main", id="other">
+    <hr>
+    <h1>Other Works</h1>
+    <p>Nothing here yet!</p>
+    <hr>
+  </div>
   <hr>
-  <section>
-    <div class="mainArea", id="contact">
-      <hr>
-      <em>Contact Email: benbwarner@gmail.com</em>
-      <p>
-        <a href="https://www.linkedin.com/in/benjamin-b-warner/">LinkedIn</a> <a href="#">Art Station</a> <a href="#">Other</a>
-      </p>
-      <hr>
-    </div>
-  </section>
+  <div class="main", id="contact">
+    <hr>
+    <em>Contact Email: benbwarner@gmail.com</em>
+    <p>
+      <a href="https://www.linkedin.com/in/benjamin-b-warner/">LinkedIn</a> <a href="#">Art Station</a> <a href="#">Other</a>
+    </p>
+    <hr>
+  </div>
   <hr>
 </div>
 <hr>
