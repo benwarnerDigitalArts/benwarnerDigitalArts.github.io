@@ -6,7 +6,6 @@
 <meta name="description" keywords="digital art, graphics, prototyping, engineer">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<body style="background-image: url('assets/starfield-field.jpg');">
 <style>
 * { box-sizing: border-box; }
 body { font-family: "Times New Roman", Times, serif; }
@@ -23,18 +22,6 @@ section {
   display: -webkit-flex;
   display: flex;
 }
-/* Create three columns/boxes that floats next to each other */
-nav {
-  -webkit-flex: 0.25;
-  -ms-flex: 0.25;
-  flex: 0.25;
-  background: #999;
-  padding: 5px;
-}
-
-/* Style the list inside the menu */
-nav ul { list-style-type: none; padding: 0; }
-
 mainArea {
   -webkit-flex: 3.5;
   -ms-flex: 3.5;
@@ -42,13 +29,6 @@ mainArea {
   padding: 10px;
   background-color: #000;
   color: white;
-}
-nav2 {
-  -webkit-flex: 0.25;
-  -ms-flex: 0.25;
-  flex: 0.25;
-  background: #999;
-  padding: 5px;
 }
 /* Fixed sidebar */
 .sidenav {
@@ -76,6 +56,18 @@ section::after {
   display: table;
   clear: both;
 }
+/* Add the parallax!! */
+.parallax {
+  /* The image used */
+  background-image: url('assets/starfield-field.jpg');
+  /* Full height */
+  height: 100%; 
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 /* Style the footer */
 footer {
   background-color: #666;
@@ -83,14 +75,6 @@ footer {
   text-align: center;
   color: white;
 }
-/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens
-@media (max-width: 600px) {
-  nav, article {
-    width: 100%;
-    height: auto;
-  }
-}
-*/
 .main {
   margin-left: 160px; /* Same as the width of the sidenav */
   font-size: 28px; /* Increased text to enable scrolling */
@@ -103,6 +87,9 @@ footer {
 </style>
 </head>
 <body>
+  
+<div class="parallax"></div>
+  
 <header>
   <h2>Digital Arts</h2>
   <h5>by Ben B. Warner</h5>  
@@ -136,6 +123,25 @@ footer {
       </mainArea>
       <hr>
     </section>
+    <hr>
+    <section>
+      <hr>
+      <mainArea>
+        <h1>2D Works</h1>
+        <p>Nothing here yet!</p>
+      </mainArea>
+      <hr>
+    </section>
+    <hr>
+    <section>
+      <hr>
+      <mainArea>
+        <h1>Other Works</h1>
+        <p>Nothing here yet!</p>
+      </mainArea>
+      <hr>
+    </section>
+    <hr>
   </div>
 </section>
 <hr>
@@ -146,6 +152,6 @@ footer {
     <a href="https://www.linkedin.com/in/benjamin-b-warner/">LinkedIn</a> <a href="#">Art Station</a> <a href="#">Other</a>
   </p>
 </footer>
-
+<div class="parallax"></div>
 </body>
 </html>
