@@ -10,11 +10,13 @@
 * { box-sizing: border-box; }
 body { font-family: "Times New Roman", Times, serif; }
 /* Style the header */
-header {
+.header {
+  height: 10%;
+  width: 100%;
   background-color: #666;
-  padding: 5px;
+  padding: 6px 8px 6px 16px;
   text-align: center;
-  font-size: 20px;
+  font-size: 25px;
   color: white;
 }
 /* Container for flexboxes */
@@ -22,7 +24,7 @@ section {
   display: -webkit-flex;
   display: flex;
 }
-mainArea {
+.mainArea {
   -webkit-flex: 3.5;
   -ms-flex: 3.5;
   flex: 3.5;
@@ -32,7 +34,7 @@ mainArea {
 }
 /* Fixed sidebar */
 .sidenav {
-  height: 100%;
+  height: 90%;
   width: 160px;
   position: fixed;
   z-index: 1;
@@ -68,13 +70,6 @@ section::after {
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* Style the footer */
-footer {
-  background-color: #666;
-  padding: 10px;
-  text-align: center;
-  color: white;
-}
 .main {
   margin-left: 160px; /* Same as the width of the sidenav */
   font-size: 28px; /* Increased text to enable scrolling */
@@ -89,6 +84,10 @@ footer {
 <body>
   
 <div class="parallax"></div>
+<div class="header">
+    <h2>Digital Arts</h2>
+    <h5>by Ben B. Warner</h5>
+</div>
 <div class="sidenav">
   <a href="#about">About</a>
   <a href="#3Dworks">3D Works</a>
@@ -97,53 +96,41 @@ footer {
   <a href="#contact">Contact</a>
 </div>
 <div class="main">
-  <header>
-    <h2>Digital Arts</h2>
-    <h5>by Ben B. Warner</h5>  
-  </header>
   <hr>
   <section>
-    <div id="about">
+    <div class="mainArea",id="about">
       <hr>
-      <mainArea>
-        <h1>About Me</h1>
-        <p>I am a Mechanical Engineer with a Bachelors Degree from Clemson University trying to improve the world by focusing on sustainable practices in my personal and professional life. I enjoy the prospect of working with new technologies, such as VR and 3D printing, and getting a chance to improve them further. I am proficient in multiple computer programming languages such as C++ and Python. I also am very well versed in design software such as SolidWorks and similar CAD.</p>
-        <p>In addition to my pursuits in the engineering field, I have begun honing my 3D design and programming skills through a Masters of Science in Digital Production Arts. In this program, I am able to optimize the use of my free time to develop my personal and professional interests in Digital Productions.</p>
-        <p>I work very well in a team environment and thrive in a setting where finding creative and innovative solutions is a daily challenge.</p>
-      </mainArea>
+      <h1>About Me</h1>
+      <p>I am a Mechanical Engineer with a Bachelors Degree from Clemson University trying to improve the world by focusing on sustainable practices in my personal and professional life. I enjoy the prospect of working with new technologies, such as VR and 3D printing, and getting a chance to improve them further. I am proficient in multiple computer programming languages such as C++ and Python. I also am very well versed in design software such as SolidWorks and similar CAD.</p>
+      <p>In addition to my pursuits in the engineering field, I have begun honing my 3D design and programming skills through a Masters of Science in Digital Production Arts. In this program, I am able to optimize the use of my free time to develop my personal and professional interests in Digital Productions.</p>
+      <p>I work very well in a team environment and thrive in a setting where finding creative and innovative solutions is a daily challenge.</p>
       <hr>
     </div>
   </section>
   <hr>
   <section>
-    <div id="3Dworks">
+    <div class="mainArea",id="3Dworks">
       <hr>
-      <mainArea>
-        <h1>3D Works</h1>
-        <p>Nothing here yet!</p>
-      </mainArea>
+      <h1>3D Works</h1>
+      <p>Nothing here yet!</p>
       <hr>
     </div>
   </section>
   <hr>
   <section>
-    <div id="2Dworks">
+    <div class="mainArea",id="2Dworks">
       <hr>
-      <mainArea>
-        <h1>2D Works</h1>
-        <p>Nothing here yet!</p>
-      </mainArea>
+      <h1>2D Works</h1>
+      <p>Nothing here yet!</p>
       <hr>
     </div>
   </section>
   <hr>
   <section>
-    <div id="other">
+    <div class="mainArea",id="other">
       <hr>
-      <mainArea>
-        <h1>Other Works</h1>
-        <p>Nothing here yet!</p>
-      </mainArea>
+      <h1>Other Works</h1>
+      <p>Nothing here yet!</p>
       <hr>
     </div>
   </section>
@@ -151,12 +138,10 @@ footer {
   <section>
     <div id="contact">
       <hr>
-      <mainArea>
-        <em>Contact Email: benbwarner@gmail.com</em>
-        <p>
-          <a href="https://www.linkedin.com/in/benjamin-b-warner/">LinkedIn</a> <a href="#">Art Station</a> <a href="#">Other</a>
-        </p>
-      </mainArea>
+      <em>Contact Email: benbwarner@gmail.com</em>
+      <p>
+        <a href="https://www.linkedin.com/in/benjamin-b-warner/">LinkedIn</a> <a href="#">Art Station</a> <a href="#">Other</a>
+      </p>
       <hr>
     </div>
   </section>
