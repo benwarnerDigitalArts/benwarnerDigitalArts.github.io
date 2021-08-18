@@ -17,8 +17,8 @@ body {
   height: 15%;
   width: 100%;
   position: fixed;
+  top: 0; left: 0;
   background-color: #666;
-  padding: 6px 8px 6px 16px;
   text-align: center;
   font-size: 25px;
   color: white;
@@ -42,11 +42,9 @@ section {
   width: 160px;
   position: fixed;
   z-index: 1;
-  bottom 0;
-  left: 0;
+  bottom 0; left: 0;
   background-color: #111;
   overflow-x: hidden;
-  padding-top: 20px;
 }
 .sidenav a {
   padding: 6px 8px 6px 16px;
@@ -89,8 +87,7 @@ section::after {
   
 <div class="parallax"></div>
 <div class="header">
-    <h2>Digital Arts</h2>
-    <h5>by Ben B. Warner</h5>
+  <h2>Ben Warner's Digital Art Nexus</h2>
 </div>
 <div class="sidenav">
   <a href="#about">About</a>
@@ -101,8 +98,8 @@ section::after {
 </div>
 <div class="main">
   <hr>
-  <div id="about">
-    <div class="mainArea">
+  <section>
+    <div class="mainArea", id="about">
       <hr>
       <h1>About Me</h1>
       <p>I am a Mechanical Engineer with a Bachelors Degree from Clemson University trying to improve the world by focusing on sustainable practices in my personal and professional life. I enjoy the prospect of working with new technologies, such as VR and 3D printing, and getting a chance to improve them further. I am proficient in multiple computer programming languages such as C++ and Python. I also am very well versed in design software such as SolidWorks and similar CAD.</p>
@@ -110,7 +107,7 @@ section::after {
       <p>I work very well in a team environment and thrive in a setting where finding creative and innovative solutions is a daily challenge.</p>
       <hr>
     </div>
-  </div>
+  </section>
   <hr>
   <section>
     <div class="mainArea", id="3Dworks">
