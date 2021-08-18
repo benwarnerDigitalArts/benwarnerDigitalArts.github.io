@@ -8,14 +8,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <body style="background-image: url('assets/starfield-field.jpg');">
 <style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Times New Roman", Times, serif;
-}
-
+* { box-sizing: border-box; }
+body { font-family: "Times New Roman", Times, serif; }
 /* Style the header */
 header {
   background-color: #666;
@@ -39,10 +33,7 @@ nav {
 }
 
 /* Style the list inside the menu */
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
+nav ul { list-style-type: none; padding: 0; }
 
 mainArea {
   -webkit-flex: 3.5;
@@ -52,7 +43,6 @@ mainArea {
   background-color: #000;
   color: white;
 }
-  
 nav2 {
   -webkit-flex: 0.25;
   -ms-flex: 0.25;
@@ -60,14 +50,32 @@ nav2 {
   background: #999;
   padding: 5px;
 }
-
+/* Fixed sidebar */
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+.sidenav a:hover { color: #f1f1f1; }
 /* Clear floats after the columns */
 section::after {
   content: "";
   display: table;
   clear: both;
 }
-
 /* Style the footer */
 footer {
   background-color: #666;
@@ -75,13 +83,22 @@ footer {
   text-align: center;
   color: white;
 }
-
-/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens
 @media (max-width: 600px) {
   nav, article {
     width: 100%;
     height: auto;
   }
+}
+*/
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
 </style>
 </head>
@@ -91,14 +108,14 @@ footer {
   <h5>by Ben B. Warner</h5>  
 </header>
 <hr>
-<section>
-  <nav>
-    <ul>
-      <li><a href="/3Dworks/">3D Works</a></li>
-      <li><a href="#">2D Works</a></li>
-      <li><a href="#">Other</a></li>
-    </ul>
-  </nav>
+<div class="sidenav">
+  <a href="#about">About</a>
+  <a href="/3Dworks/">3D Works</a>
+  <a href="#">2D Works</a>
+  <a href="#">Other</a>
+  <a href="#contact">Contact</a>
+</div>
+<div class="main">
   <section>
     <hr>
     <mainArea>
@@ -107,15 +124,16 @@ footer {
       <p>In addition to my pursuits in the engineering field, I have begun honing my 3D design and programming skills through a Masters of Science in Digital Production Arts. In this program, I am able to optimize the use of my free time to develop my personal and professional interests in Digital Productions.</p>
       <p>I work very well in a team environment and thrive in a setting where finding creative and innovative solutions is a daily challenge.</p>
     </mainArea>
+  </section>
+  <hr>
+  <section>
     <hr>
     <mainArea>
       <h1>3D Works</h1>
       <p>Nothing here yet!</p>
     </mainArea>
   </section>
-  <hr>
-  <nav2></nav2>
-</section>
+</div>
 <hr>
   
 <footer>
