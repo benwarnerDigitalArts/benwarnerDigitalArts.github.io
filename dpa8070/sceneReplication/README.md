@@ -12,6 +12,9 @@
 ### Objective:
 #### Replicate a picture as accurately as you can, creating the models, shaders, textures, and lighting.
 
+#### Here is a quick comparison of the REAL scene (left) compared to the final product (right):
+![real and not](https://benwarnerdigitalarts.github.io/dpa8070/sceneReplication/images/refAndScene.PNG)
+
 ### Solution:
 ####  For this task, I thought it might be interesting to make a bookshelf, but then I realized that would be too intricate to model every individual shelf and piece on the entire unit.  I narrowed my focus to just one shelf and picked fewer items to be realistic about my goals. This provided me with a good balance of intricate and simple models and shaders, then also gave me an interesting opportunity to experiment with UVs and textures.
 
