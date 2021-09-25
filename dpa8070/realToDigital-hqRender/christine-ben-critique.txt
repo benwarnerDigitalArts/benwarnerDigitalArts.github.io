@@ -1,0 +1,23 @@
+Hey Christine,
+
+Thank you for the critique!  I will definitely work on some of those areas of improvement that you mentioned.  
+
+I might as well use this opportunity to segue into critiquing your BearGGuy:
+
+To start off, I also think you did a fantastic job getting your model as accurate as possible to the reference.  It is definitely a challenge to distinguish your model from the original reference when comparing them side-by-side.  I also like the way that your shaders contribute to the overall look of the final product, enhancing the realism by making the material seem more plasticy.  I think we chose some nice models to work with because the "A" pose of our figures allows us to maintain symmetry very well.  Specifically, it is a very good trait that you have a distinct center line on your model.  Lastly, you did a great job of adding extra edge loops where hard creases were necessary while leaving nice curvatures elsewhere.  Your use of NURBS is very well done and helps to contribute to the nice curvatures.
+
+As far as improvements, I think the biggest challenge will be in retopologizing and further merging some of the separate components.  Anywhere that you used a sphere, there will be a vertice at the top and bottom where a great many lines will come to end (like the parts of the bow, head, arms, etc.).  I think this scenario is generally avoided to prevent having a lot of triangles, but can be fixed by just deleting the triangles pretty much (the lines, not the faces) and redrawing them.  You may also want to completely merge some of the individual components eventually, like the ears, eyes, and snout with the base head model.  This can be done by deleting any of the unseen faces and merging vertices that end up close to each other, reducing geometry and adjusting vertices as needed.
+
+Again, this model is fantastic and matches the reference almost perfectly. I am also excited to see your future creations.  Have a great weekend!
+
+Best regards,
+Ben B. Warner
+
+
+On Wed, Sep 30, 2020 at 8:47 PM Christine Wendell <wendell@g.clemson.edu> wrote:
+Hey Ben,
+
+First of all, I'm really impressed by the accuracy of the model compared to the reference image. The lines are really crisp and the topology is very clean with little to no Ngons. If you had any, you hid them really well in the bottoms of the feet and even the joints. You also did a fantastic job with the shaders and stayed very true to the reference, and the eyes look really interesting by giving the illusion of being a sticker or a painted part of raised plastic. However, there are a few things I think could help improve your next model. To start off, the main body of the figure looks a bit too wide when viewing from the front and back views. I think trying to keep the photo's perspective in mind like Rodney mentioned a few classes ago might help prevent this. The legs also seem relatively short for the model or the side armor pieces, but again that might just be a problem with the perspective view. Finally, upon further inspection in Maya, there are a few edges that seem to round out in places that should be sharper, like the front of the kneepads for example. I think having another edge loop or two very close to that edge can help keep its sharpness or at least make it look sharper than it normally would. Overall, this is a very solid model and I can't wait to see the other models you're going to create!
+
+From,
+Christine Wendell

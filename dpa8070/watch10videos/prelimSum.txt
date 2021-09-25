@@ -1,0 +1,42 @@
+https://app.pluralsight.com/library/courses/advanced-char-modeling-maya-2398/table-of-contents
+
+Video #1: Setting up our project
+
+--Set a project and project window to create the default setup of folders.
+--Set hotkeys to most commonly used tools, such as: offset edge loop, insert edge loop, extrude, cut, etc.
+--Add references to image planes for front and side views, then clean up the perspective view.
+
+Video #2: Creating Base Mesh for the Arms
+
+--Insert a polymesh cylinder, then reduce divisions.
+--Move shape into place then deform it to fit roughly to the dimensions between the shoulder and the wrist.
+--Insert enough edge loops to bring the form closer to the sketch.  Move and scale until well fit from the front view.
+
+Video #3 + #4: Modeling Base Mesh for the Chest and Legs
+
+--Use the same principles as used for the arms, using a cylinder then deforming it.
+--Cut the chest in half to make symmetry easier later.
+--Adjust the hip lines to flow with the natural geometries.
+--Do a duplicate special to mirror the arm, half torso, and leg so that future operations are reflected.
+
+Video #5 + #6: Modeling Base Mesh for the Hand 
+
+--G to repeat last operation!
+--Use cylinder for palm, then duplicate to make fingers and thumb. Combine all shapes into the same object.
+--Extrude edges at the base of fingers then merge vertices to create a continuous edge.
+--Extrude the edge forming the base of the fingers down twice, then merge edges to reduce the count.
+--Insert multiple edge loops, evenly spaced, by opening the tool settings.
+
+Video #7 + #8: Refining the Chest, Arms, Waist, Leg, and Boot
+
+--Merge the seperate components made in previous videos by grabbing sets of points and "merging" them when aligned.
+--Use the smooth mode to identify unmerged vertices by looking for parts where a "pinching" towards the unmerged is visible.
+--Add edges loops to shoulder area, move edges below outer layer to create the impression of seperate materials.
+--Add "holding edges" near creases to maintain hard lines when using the smooth option.
+--Select a face loop by choosing one face, then double click the next face in the direction of the loop.
+--Make the boot seperate by "extracting", then bring the top lip inwards to account for any rigging deformations creating a gap.
+
+Video #9 + #10: Adding finger details and finalizing the body mesh
+
+--Up rez the wrist area to be able to merge with the hand, but create diamonds to stop the extra lines from increasing the overall poly count.
+--Duplicate and merge vertices to create a finalized body mesh.
