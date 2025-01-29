@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>BW Digital Art Nexus</title>
+    <title>BW Engineering and Digital Art Nexus</title>
     <meta name="description" content="A digital art nexus for displaying the works of Ben B. Warner">
-    <meta name="description" keywords="ben, warner, digital, art, graphics, prototype, engineer">
+    <meta name="description" keywords="ben, warner, engineering, digital, art, graphics, prototype, engineer">
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
     body { 
       font-family: "Times New Roman", Times, serif;
       background-image: url('assets/starfield-field.jpg');
       margin: 0;
     }
-    /* Style the header */
-    header {
+    header {/* Style the header */
       height: 7vw;
       width: 100%;
       position: fixed;
@@ -26,24 +25,19 @@
     * {
       box-sizing: border-box;
     }
-
     img {
       vertical-align: middle;
     }
-
     .container { /* Position the image container (needed to position the left and right arrows) */
       position: relative;
     }
-
     .mySlides { /* Hide the images by default */
       background-color: #333;
       display: none;
     }
-
     .cursor { /* Add a pointer when hovering over the thumbnail images */
       cursor: pointer;
     }
-
     .prev, /* Next & previous buttons */
     .next {
       cursor: pointer;
@@ -59,17 +53,14 @@
       user-select: none;
       -webkit-user-select: none;
     }
-
     .next { /* Position the "next button" to the right */
       right: 0;
       border-radius: 3px 0 0 3px;
     }
-
     .prev:hover, /* On hover, add a black background color with a little bit see-through */
     .next:hover {
       background-color: rgba(0, 0, 0, 0.8);
     }
-
     .numbertext { /* Number text (1/3 etc) */
       color: #f2f2f2;
       font-size: 12px;
@@ -77,70 +68,113 @@
       position: absolute;
       top: 0;
     }
-
     .caption-container { /* Container for image text */
       text-align: center;
       background-color: #222;
       padding: 2px 16px;
       color: white;
     }
-
     .row {
-      display: table;
+      display: block;
     }
-
     .row:after {
       content: "";
-      display: table;
+      display: block;
       clear: both;
     }
-
     .slide-column { /* Six columns side by side */
       float: left;
       width: 16.66%;
     }
-    .column {
-      width: 33%;
-      padding: 10px;
-      display: table-cell;
+    .header-column {
+      width: 33.33%;
+      height: 17vw;
+      float: left;
       background-color: #222;
       color: white;
     }
-
     .demo { /* Add a transparency effect for thumnbail images */
       opacity: 0.4;
     }
-
     .active,
     .demo:hover {
       opacity: 1;
     }
-
     .center {
       display: block;
       margin-left: auto;
       margin-right: auto;
       width: 50%;
     }
+    .tab {/* Style the tab */
+      overflow: hidden;
+      border: 1px solid #ccc;
+      background-color: #333;
+    }
+    .tab button {/* Style the buttons inside the tab */
+      background-color: inherit;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      transition: 0.3s;
+      font-size: 17px;
+      color: white;
+    }
+    .tab button:hover {/* Change background color of buttons on hover */
+      background-color: #ddd;
+    }
+    .tab button.active {/* Create an active/current tablink class */
+      background-color: #777;
+    }
+    .tabcontent {/* Style the tab content */
+      display: none;
+      padding: 6px 12px;
+      border: 1px solid #ccc;
+      border-top: none;
+      background-color: #222;
+      color: white;
+    }
+
     </style>
   </head>
 
+  <!--Header-->
   <body>
     <div class = "row">
-      <div class="column">
-        <img src="images/self/falkirkWheel.JPG" class="center">
-        <h2 class="center">Ben B. Warner</h2>
+      <div class="header-column">
+        <img src="images/self/falkirkWheel.JPG" style="width:12vw;" class="center">
       </div>
-      <div class="column">
-
-        <h1 class="center">Engineering and Digital Art Nexus</h1>
-        <button class="center">Contact Me!</button>
+      <div class="header-column">
+        <h1 class="center" style="font-size:2vw;">Ben Warner</h1>
+        <h2 class="center" style="font-size:2vw;">Engineering and Digital Arts</h2>
+        <button class="center" style="font-size:2vw;" onclick="window.location.href='https://www.linkedin.com/in/benjamin-b-warner';">Contact me on LinkedIn!</button>
         <br>
+      </div>
+      <div class="header-column">
+        <img src="images/self/logoReel.PNG" style="width:17vw;" class="center">
       </div>
     </div>
 
-    <!-- <h2 style="text-align:center">Ben Warner's Engineering and Digital Art Nexus</h2> -->
+    <!--About me-->
+    <div class = "row">
+      <div class="center" style="width:50%; background-color: #222; color: white; padding: 10px;">
+        <h3 style="font-size:1vw;">About Me:</h3>
+        <p style="font-size:1vw;">I am a Mechanical Engineer with a Bachelor's Degree from Clemson University, dedicated to improving the world through sustainable practices in both my personal and professional life. I am passionate about working with emerging technologies such as VR and 3D printing and continuously seek opportunities to enhance and innovate these fields.
+        <br><br>
+        Proficient in multiple programming languages, including C++ and Python, I am also highly skilled in design software such as SolidWorks and other CAD tools, with extensive experience in data management using PDM, PLM, Windchill, and 3DExperience.
+        <br><br>
+        Currently, I am advancing my 3D design and programming skills through a Master of Science in Digital Production Arts. This program allows me to effectively utilize my free time to further develop my interests in digital productions.
+        <br><br>
+        I excel in team environments and thrive on the challenge of finding creative and innovative solutions daily.
+        <br><br>
+        </p>
+      </div>
+    </div>
 
+
+    <!--Slides-->
     <div class="container">
       <div class="mySlides">
         <div class="numbertext">1 / 6</div>
@@ -198,7 +232,6 @@
         </div>
       </div>
     </div>
-
     <script>
     let slideIndex = 1;
     showSlides(slideIndex);
@@ -229,6 +262,48 @@
       captionText.innerHTML = dots[slideIndex-1].alt;
     }
     </script>
+    
+    <!--Tabs of Content-->
+    <div class="row">
+      <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'Engineering')" id="defaultOpen">Engineering</button>
+        <button class="tablinks" onclick="openCity(event, 'Digital Arts')">Digtal Arts</button>
+        <button class="tablinks" onclick="openCity(event, 'Contact')">Contact</button>
+      </div>
       
+      <div id="Engineering" class="tabcontent">
+        <h3>Engineering</h3>
+        <p>Engineering to be placed here!</p> 
+      </div>
+      
+      <div id="Digital Arts" class="tabcontent">
+        <h3>Digital Arts</h3>
+        <p>Art to be placed here!</p>
+      </div>
+
+      <div id="Contact" class="tabcontent">
+        <h3>Contact</h3>
+        <p>Contacts to be placed here?</p>
+      </div>
+      
+      <script>
+      function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+      
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+      </script>
+    </div>
   </body>
 </html>
