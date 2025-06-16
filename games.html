@@ -1,134 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<title>BW Unity Games</title>
-<meta name="description" content="A digital art nexus for displaying the works of Ben B. Warner">
-<meta name="description" keywords="ben, warner, digital, art, graphics, prototype, engineer">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body { 
-  font-family: "Times New Roman", Times, serif;
-  background-image: url('assets/starfield-field.jpg');
-}
-/* Style the header */
-header {
-  height: 7vw;
-  width: 100%;
-  position: fixed;
-  top: 0; left: 0;
-  background-color: #333;
-  text-align: center;
-  font-size: 2vw;
-  color: white;
-}
-/* Fixed sidebar */
-sidenav {
-  height: 100%;
-  width: 12vw;
-  position: fixed;
-  top: 7vw;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-}
-sidenav a {
-  padding: 1vw 2vw 1vw 3vw;
-  font-size: 1.5vw;
-  color: #818181;
-  display: block;
-}
-sidenav a:hover { color: #f1f1f1; }
+  <head>
+    <title>BW EDA</title>
+    <meta name="description" content="A digital art nexus for displaying the works of Ben B. Warner">
+    <meta name="description" keywords="ben, warner, engineering, digital, art, graphics, prototype, engineer">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    body { 
+      font-family: "Times New Roman", Times, serif;
+      background-image: url('assets/starfield-field.jpg');
+      margin: 0;
+    }
+    header {/* Style the header */
+      height: 7vw;
+      width: 100%;
+      position: fixed;
+      top: 0; left: 0;
+      background-color: #333;
+      text-align: center;
+      font-size: 2vw;
+      color: white;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    img {
+      vertical-align: middle;
+    }
+    .container {
+      position: relative;
+      width: 100%;
+    }
+    
+    .container img {
+      width: 100%;
+      height: auto;
+    }
+    
+    .container .btn {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      background-color: black;
+      color: white;
+      font-size: 30px;
+      padding: 20px 20px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      text-align: center;
+    }
+    
+    .container .btn:hover {
+      background-color: rgba(24, 100, 171, 0.5);
+    }
 
-main {
-  margin-left: 15vw; /* Same as the width of the sidenav */
-  font-size: 1.5vw; /* Increased text to enable scrolling */
-  padding: 3vw 2vw;
-  background-color: #777;
-  color: white;
-}
+    .row {
+      display: block;
+    }
 
-</style>
-</head>
-<body>
-  
-<header>
-  <p>Ben Warner's Unity Games Portfolio</p>
-</header>
-<sidenav>
-  <a href="index">Back to Main</a>
-  <a href="#phageshift">PhageShift</a>
-  <a href="#mazegame">aMAZEing</a>
-  <a href="#spidercrane">SpiderCrane</a>
-</sidenav>
-<hr>
-<main id="summary">
-  <hr>
-  <h2>Summary of Games:</h2>
-  <p> </p>
-  <hr>
-</main>
-<hr>
-<main id="phageshift">
-  <hr>
-  <h2>PhageShift:</h2>
-  <p>
-  The brain child of a team of three: Hayden, Derek, and me (Ben).
-  <br><br>
-  Summary: Demonstrate a mix of skills that we had accumulated in our careers so far. This game features a Bacteriophage that for some reason decides to fight Coronavirus-like enemies. After each stage is completed, the field grows!
-  <br><br>  
-  This game features randomly generated obstacles, collectibles, and enemies. The enemies have some AI path finding and seek to destroy the Phage.
-  </p>
-  <hr>
-  <iframe mozallowfullscreen="true" allow="autoplay; fullscreen"  src="phageShift/webbuild.html" style="border:0px #000000 none;" name="PhageShift" scrolling="no" msallowfullscreen="true" allowfullscreen="true" webkitallowfullscreen="true" allowtransparency="true" frameborder="0" marginheight="px" marginwidth="320px" height="650px" width="1000px">
-  </iframe>
-</main>
-<hr>
-<main id="spidercrane">
-  <hr>
-  <h2>SpiderCrane - on the Web:</h2>
-  <p>
-  I created this game with the goal of implementing some crane behaviors.
-  <br><br>
-  Rather than creating a standard crane, I thought that it would be amusing to make a spider with the front legs behaving as cranes. This yielded an end result that was more complicated than necessary, yet amusing regardless.
-  <br><br>
-  Summary: Pick up the flies that jiggle around randomly, trying to escape their binds. You can crawl around, then switch modes or switch legs which behave as a "crane game" and attempt to grab the flies and eat them.
-  </p>
-  <hr>
-  <iframe mozallowfullscreen="true" allow="autoplay; fullscreen"  src="spiderWeb/webbuild.html" style="border:0px #000000 none;" name="SpiderCrane" scrolling="no" msallowfullscreen="true" allowfullscreen="true" webkitallowfullscreen="true" allowtransparency="true" frameborder="0" marginheight="px" marginwidth="320px" height="650px" width="1000px">
-  </iframe>
-</main>
-<hr>
-<main id="mazegame">
-  <hr>
-  <h2>aMAZEing:</h2>
-  <p>
-  I created this game with the goal of demonstrating basic controls and spawning objects in a maze-like experience.
-  <br><br>
-  Of course, I tried to put an interesting spin on it... I am egg-static at the results!
-  <br><br>
-  Summary: Play as an egg rolling through a "fridge" to gather ingredients. The fridge opens after collecting enough items to allow exiting the maze and features randomized locations for collectibles.
-  </p>
-  <hr>
-  <iframe mozallowfullscreen="true" allow="autoplay; fullscreen"  src="mazeWeb/webbuild.html" style="border:0px #000000 none;" name="aMAZEingGame" scrolling="no" msallowfullscreen="true" allowfullscreen="true" webkitallowfullscreen="true" allowtransparency="true" frameborder="0" marginheight="px" marginwidth="320px" height="650px" width="1000px">
-  </iframe>
-</main>
-<hr>
-<main id="contact">
-  <hr>
-  <address>
-    Contact Email:
-    <em><a href="mailto:benbwarner@gmail.com">benbwarner@gmail.com</a></em><br>
-    LinkedIn:
-    <em><a href="https://www.linkedin.com/in/benjamin-b-warner">https://www.linkedin.com/in/benjamin-b-warner</a></em><br>
-    Github:
-    <em><a href="https://github.com/benjiit/">@benjiit</a></em><br>
-    Thingiverse:
-    <em><a href="https://www.thingiverse.com/benjiit/designs">benjiit</a></em><br>
-  </address>
-  <hr>
-</main>
-<hr>
-  
-</body>
+    .header-column {
+      width: 50%;
+      height: 8vw;
+      float: left;
+      background-color: #222;
+      color: white;
+    }
+
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    </style>
+  </head>
+
+  <!--Header-->
+  <body>
+    <div class = "row" style = "position: sticky; top: 0; z-index: 9;">
+      <div class="header-column" style="width: 15%;">
+        <div class="container">
+          <img src="images/self/falkirkWheel.JPG" style="width:6vw;" class="center">
+          <button class="btn" style="top: 20%; left: 90%; font-size: 0.5vw; padding: 0.5vw 0.5vw; width:25%; text-align: center;" onclick="window.location.href='index.html';">Home</button>
+          <button class="btn" style="top: 40%; left: 90%; font-size: 0.5vw; padding: 0.5vw 0.5vw; width:25%;  text-align: center;" onclick="window.location.href='engineering.html';">Engineering</button>
+          <button class="btn" style="top: 60%; left: 90%; font-size: 0.5vw; padding: 0.5vw 0.5vw; width:25%;  text-align: center;" onclick="window.location.href='digitalarts.html';">Digital Arts</button>
+          <button class="btn" style="top: 80%; left: 90%; font-size: 0.5vw; padding: 0.5vw 0.5vw; width:25%;  text-align: center;" onclick="window.location.href='games.html';">Games!</button>
+        </div>
+      </div>
+      <div class="header-column" style="width: 70%;">
+        <h1 class="center" style="text-align: center; font-size:2vw;">Ben Warner: Games!</h1>
+        <button class="center" style="font-size:1vw; background-color:blue; color:white" onclick="window.location.href='https://www.linkedin.com/in/benjamin-b-warner';">Contact me on LinkedIn!</button>
+        <br>
+      </div>
+      <div class="header-column" style="width: 15%;">
+        <img src="images/self/logoReel.png" style="width:8vw;" class="center">
+      </div>
+    </div>
+
+    <!--Engineering Details-->
+    <br><br>
+    <div class="row">
+      <div class="center" style="width:70%; background-color: #222; color: white; padding: 1px 10px;">
+        <h2>Games!</h2>
+        <hr>
+        <hr>
+          <h2>PhageShift:</h2>
+          <p>
+          The brain child of a team of three: Hayden, Derek, and me (Ben).
+          <br><br>
+          Summary: Demonstrate a mix of skills that we had accumulated in our careers so far. This game features a Bacteriophage that for some reason decides to fight Coronavirus-like enemies. After each stage is completed, the field grows!
+          <br><br>  
+          This game features randomly generated obstacles, collectibles, and enemies. The enemies have some AI path finding and seek to destroy the Phage.
+          </p>
+        <hr>
+          <image src="phageShift/phageShiftScreenshot.png" class= "center" width="30%" controls preload></image>
+          <button class="center" style="font-size:1vw; background-color:blue; color:white" onclick="window.location.href='phageShift/webbuild.html';">Click to play PhageShift Game!</button>      
+          <!--
+            <iframe mozallowfullscreen="true" allow="autoplay; fullscreen"  src="phageShift/webbuild.html" style="border:0px #000000 none;" name="PhageShift" scrolling="no" msallowfullscreen="true" allowfullscreen="true" webkitallowfullscreen="true" allowtransparency="true" frameborder="0" marginheight="px" marginwidth="320px" height="650px" width="1000px">
+            </iframe>
+          -->
+        <hr>
+        <hr>
+          <h2>SpiderCrane - on the Web:</h2>
+          <p>
+          I created this game with the goal of implementing some crane behaviors.
+          <br><br>
+          Rather than creating a standard crane, I thought that it would be amusing to make a spider with the front legs behaving as cranes. This yielded an end result that was more complicated than necessary, yet amusing regardless.
+          <br><br>
+          Summary: Pick up the flies that jiggle around randomly, trying to escape their binds. You can crawl around, then switch modes or switch legs which behave as a "crane game" and attempt to grab the flies and eat them.
+          </p>
+        <hr>
+          <image src="spiderWeb/spiderWebScreenshot.png" class= "center" width="30%" controls preload></image>
+          <button class="center" style="font-size:1vw; background-color:blue; color:white" onclick="window.location.href='spiderWeb/webbuild.html';">Click to play SpiderCrane Game!</button>      
+          <!--
+            <iframe mozallowfullscreen="true" allow="autoplay; fullscreen"  src="spiderWeb/webbuild.html" style="border:0px #000000 none;" name="SpiderCrane" scrolling="no" msallowfullscreen="true" allowfullscreen="true" webkitallowfullscreen="true" allowtransparency="true" frameborder="0" marginheight="px" marginwidth="320px" height="650px" width="1000px">
+            </iframe>
+          -->
+        <hr>
+        <hr>
+          <h2>aMAZEing:</h2>
+          <p>
+          I created this game with the goal of demonstrating basic controls and spawning objects in a maze-like experience.
+          <br><br>
+          Of course, I tried to put an interesting spin on it... I am egg-static at the results!
+          <br><br>
+          Summary: Play as an egg rolling through a "fridge" to gather ingredients. The fridge opens after collecting enough items to allow exiting the maze and features randomized locations for collectibles.
+          </p>
+        <hr>
+          <image src="mazeWeb/mazeWebScreenshot.png" class= "center" width="30%" controls preload></image>
+          <button class="center" style="font-size:1vw; background-color:blue; color:white" onclick="window.location.href='mazeWeb/webbuild.html';">Click to play aMazeing Game!</button>          
+          <!--
+            <iframe mozallowfullscreen="true" allow="autoplay; fullscreen"  src="mazeWeb/webbuild.html" style="border:0px #000000 none;" name="aMAZEingGame" scrolling="no" msallowfullscreen="true" allowfullscreen="true" webkitallowfullscreen="true" allowtransparency="true" frameborder="0" marginheight="px" marginwidth="320px" height="650px" width="1000px">
+            </iframe>
+          -->
+        <hr><hr>
+      </div>
+    </div>
+  </body>
 </html>
