@@ -1,0 +1,119 @@
+body{ 
+    font-family: "Times New Roman", Times, serif;
+    background-image: linear-gradient(to bottom right, green, #222);
+    margin: 0;
+    background-attachment: fixed;
+}
+
+header {/* Style the header */
+    height: 7vw;
+    width: 100%;
+    position: fixed;
+    top: 0; left: 0;
+    background-color: #222;
+    text-align: center;
+    font-size: 2vw;
+    color: white;
+}
+
+h3 {
+    text-align: center;
+    font-size:2vw;
+}
+
+p {
+    text-align: center;
+    font-size:1vw;
+}
+
+ul{
+    font-size:1vw;
+}
+
+* {
+    margin: 2;
+    padding: 2;
+    box-sizing: border-box;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.row {
+    display: block;
+}
+
+.column {
+    background-color: #222;
+    float: left;
+    padding: 0.5vw 0.5vw;
+    border-radius: 5px;
+}
+
+.spacer_column {
+    background-color: none;
+    float: left;
+    width: 12.5%;
+    height: 100%;
+    padding: 5px;
+}
+
+.spacer_row{
+    background-color: none;
+    width: 100%;
+    height: 2vw;
+    display: block;
+    float: left;
+    padding: 5px;
+}
+
+.header-column {
+    width: 50%;
+    height: 8vw;
+    float: left;
+    background-color: #222;
+    color: white;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    background-color: #222;
+    position: relative;
+    width: 100%;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+img:hover {
+  position: relative;
+  z-index: 2;
+  transform: scale(1.25);
+  object-fit: fill;
+  overflow: visible;
+}
+
+.btn {
+    position: absolute;
+    background-color: rgb(0, 130, 130);
+    color: white;
+    font-size: 30px;
+    padding: 20px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: rgba(0, 250, 15, 0.5);
+}

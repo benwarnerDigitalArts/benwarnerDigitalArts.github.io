@@ -6,210 +6,292 @@
     <meta name="description" keywords="ben, warner, engineering, digital, art, graphics, prototype, engineer">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-    body { 
-      font-family: "Times New Roman", Times, serif;
-      background-image: url('assets/starfield-field.jpg');
-      margin: 0;
-    }
-    header {/* Style the header */
-      height: 7vw;
-      width: 100%;
-      position: fixed;
-      top: 0; left: 0;
-      background-color: #333;
-      text-align: center;
-      font-size: 2vw;
-      color: white;
-    }
-    * {
-      box-sizing: border-box;
-    }
-    img {
-      vertical-align: middle;
-    }
-    .container {
-      position: relative;
-      width: 100%;
-    }
-    
-    .container img {
-      width: 100%;
-      height: auto;
-    }
-    
-    .container .btn {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      background-color: black;
-      color: white;
-      font-size: 30px;
-      padding: 20px 20px;
-      border: none;
-      cursor: pointer;
-      border-radius: 5px;
-      text-align: center;
-    }
-    
-    .container .btn:hover {
-      background-color: rgba(24, 100, 171, 0.5);
-    }
-
-    .row {
-      display: block;
-    }
-
-    .header-column {
-      width: 50%;
-      height: 8vw;
-      float: left;
-      background-color: #222;
-      color: white;
-    }
-
-    .center {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    </style>
+    <link rel="stylesheet" href="bw-style.css">
   </head>
 
   <!--Header-->
   <body>
     <div class = "row" style = "position: sticky; top: 0; z-index: 9;">
-      <div class="header-column" style="width: 15%;">
-        <div class="container">
-          <img src="images/self/falkirkWheel.JPG" style="width:6vw;" class="center">
-          <button class="btn" style="top: 20%; left: 90%; font-size: 0.5vw; padding: 0.5vw 0.5vw; width:25%; text-align: center;" onclick="window.location.href='index.html';">Home</button>
-          <button class="btn" style="top: 40%; left: 90%; font-size: 0.5vw; padding: 0.5vw 0.5vw; width:25%;  text-align: center;" onclick="window.location.href='engineering.html';">Engineering</button>
-          <button class="btn" style="top: 60%; left: 90%; font-size: 0.5vw; padding: 0.5vw 0.5vw; width:25%;  text-align: center;" onclick="window.location.href='digitalarts.html';">Digital Arts</button>
-          <button class="btn" style="top: 80%; left: 90%; font-size: 0.5vw; padding: 0.5vw 0.5vw; width:25%;  text-align: center;" onclick="window.location.href='games.html';">Games!</button>
+      <div class = "header-column" style="width: 15%;">
+        <div class = "container">
+          <img src = "images/self/falkirkWheel.JPG" style="height: 8vw; width: 40%; object-fit: cover; pointer-events: none;" class="center">
+          <button class = "btn" style="top: 5%; left: 70%; font-size: 0.5vw; padding: 0.5vw 0.5vw; width:25%; text-align: center;" onclick="window.location.href='index.html';">Home</button>
+          <button class = "btn" style="top: 28%; left: 70%; font-size: 0.5vw; padding: 0.5vw 0.5vw; width:30%;  text-align: center; background-color: green;" onclick="window.location.href='engineering.html';">Engineering</button>
+          <button class = "btn" style="top: 51%; left: 70%; font-size: 0.5vw; padding: 0.5vw 0.5vw; width:25%;  text-align: center;" onclick="window.location.href='digitalarts.html';">Digital Arts</button>
+          <button class = "btn" style="top: 75%; left: 70%; font-size: 0.5vw; padding: 0.5vw 0.5vw; width:25%;  text-align: center;" onclick="window.location.href='games.html';">Games!</button>
         </div>
       </div>
-      <div class="header-column" style="width: 70%;">
-        <h1 class="center" style="text-align: center; font-size:2vw;">Ben Warner: Engineering</h1>
-        <button class="center" style="font-size:1vw; background-color:blue; color:white" onclick="window.location.href='https://www.linkedin.com/in/benjamin-b-warner';">Contact me on LinkedIn!</button>
-        <br>
+      <div class = "header-column" style="width: 70%;">
+        <div class = "container">
+          <h1 class = "center" style="top: 10%; font-size:2vw; padding: 0.5vw 0.5vw; text-align: center;">Ben Warner: Engineering</h1>
+          <button class = "btn" style="top: 130%; left: 50%; transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); font-size: 1vw; padding: 0.5vw 0.5vw; width:25%;  text-align: center;" onclick="window.location.href='https://www.linkedin.com/in/benjamin-b-warner';">Contact me on LinkedIn!</button>
+        </div>
       </div>
-      <div class="header-column" style="width: 15%;">
-        <img src="images/self/logoReel.png" style="width:8vw;" class="center">
+      <div class = "header-column" style="width: 15%;">
+        <img src = "images/self/logoReel.png" style="height:8vw; object-fit: cover; pointer-events: none;" class="center">
       </div>
     </div>
 
-    <!--Engineering Details-->
-    <br><br>
-    <div class="row">
-      <div class="center" style="width:70%; background-color: #222; color: white; padding: 1px 10px;">
-        <h2>Find below some samples from my engineering works, with only sparse details for my projects covered by NDAs which will have higher levels of complexity.</h2>
-        <h2>Ask me directly for limited overviews!</h2>
+    <!--Spacer--> <div class = "spacer_row"></div>
 
-        <br>
-        <hr><hr>
-        <h2>Product Designs</h2>
+    <!--Product Details-->
+    <div class = "row" style="width:100%; height: 12vw;">
+      <div class = "spacer_column"></div>
+      <div class="column" style="width:75%; background-color: #222; color: white; padding: 1px 10px;">
+        <h3>Product Designs:</h3>
         <p>Here are brief glimpses into the products that I have designed which consists of weldments, sheet metal, sensitive equipment, and electrical enclosures.</p>
         <p>These assemblies were developed with skills in reverse engineering, flow analysis, and structural simulation. They feature complex piping and electrical routing, following strict ASME compliance.</p>
 
-          <image src="images/productdesigns/Truck-Assembly.jpg" width="22.5%" controls preload></image>
-        <image src="images/productdesigns/Truck-RM.jpg" width="10%" controls preload></image>
-        <image src="images/productdesigns/MVD-RM-collapsed.png" width="12%" controls preload></image>
-        <image src="images/productdesigns/MVD-RM-exploded.png" width="15.5%" controls preload></image>
-        <br><br>
-        <image src="images/productdesigns/MVDnew-front.PNG" width="16%" controls preload></image>
-        <image src="images/productdesigns/MVDnew-back.PNG" width="16%" controls preload></image>
-        <image src="images/productdesigns/popwheelsCabinet-reverseEngineered.png" width="14%" controls preload></image>
+      </div>
+      <div class = "spacer_column"></div>
+    </div>
+          
+    <div class = "row" style="width:100%; height: 17vw;">
+      <div class = "spacer_column"></div>
+      <div class = "column" style="width:18.75%;">
+        <img src="images/productdesigns/Truck-Assembly.jpg" style="width: 100%; height: 15vw; object-fit: cover;"></img>
+      </div>
+      <div class = "column" style="width:18.75%;">
+        <img src="images/productdesigns/Truck-RM.jpg" style="width: 100%; height: 15vw; object-fit: cover;"></img>
+      </div>
+      <div class = "column" style="width:18.75%;">
+        <img src="images/productdesigns/MVD-RM-collapsed.png" style="width: 100%; height: 15vw; object-fit: cover;"></img>
+      </div>
+      <div class = "column" style="width:18.75%;">
+        <img src="images/productdesigns/MVD-RM-exploded.png" style="width: 100%; height: 15vw; object-fit: cover;"></img>
+      </div>
+      <div class = "spacer_column"></div>
+    </div>
 
-        <br><br>
+    <div class = "row" style="width:100%; height: 17vw;">
+      <div class = "spacer_column"></div>
+      <div class = "column" style="width:18.75%;">
+        <img src="images/productdesigns/MVDnew-front.PNG" style="width: 100%; height: 15vw; object-fit: cover;"></img>
+      </div>
+      <div class = "column" style="width:18.75%;">
+        <img src="images/productdesigns/MVDnew-back.PNG" style="width: 100%; height: 15vw; object-fit: cover;"></img>
+      </div>
+      <div class = "column" style="width:18.75%;">
+        <img src="images/productdesigns/popwheelsCabinet-reverseEngineered.png" style="width: 100%; height: 15vw; object-fit: cover;"></img>
+      </div>
+      <div class = "spacer_column" style="width:18.75%;"></div>
+      <div class = "spacer_column"></div>
+    </div>
 
-        <hr><hr>
-        <h2>Retrofit Parts:</h2>
+    <!--Spacer--> <div class = "spacer_row"></div>
+
+    <!--Retorfit Details-->
+    <div class = "row" style="width:100%; height: 12vw;">
+      <div class = "spacer_column"></div>
+      <div class="column" style="width:75%; background-color: #222; color: white; padding: 1px 10px;">
+        <h3>Retrofits:</h3>
         <p>These retrofits were designed with the intention of being 3D printed to enable rabid prototyping and immediate implementation.</p>
-        <p>Using 3D printed material was feasible for these applications due to being in low-wear and low-stress environments in some cases.</p>
-        <p>In other cases, being 3D printed allowed for break-away funtionality when other components are more critical.</p>
-        <h3>Catia:</h3>
-        <image src="images/retrofits/bracketAttachment.jpg" width="19.5%" controls preload></image>
-        <image src="images/retrofits/fingersAssembler.jpg" width="12.5%" controls preload></image>
-        <image src="images/retrofits/fingersInstaller.jpg" width="18%" controls preload></image>
-        <br>
-        <h3>Solidworks:</h3>
-        <image src="images/retrofits/flextrack-hopperFunnelPic.png" width="15%" controls preload></image>
-        <image src="images/retrofits/flextrack-trayPic.png" width="36%" controls preload></image>
-        <image src="images/retrofits/quadbot-gripperPic.png" width="18%" controls preload></image>
-        <br><br>
+        <p>This material was feasible due to being in low-wear and low-stress environments in some cases while also enabling break-away functionality in some cases.</p>
+      </div>
+      <div class = "spacer_column"></div>
+    </div>
+          
+    <div class = "row" style="width:100%; height: 17vw;">
+      <div class = "spacer_column"></div>
+      <div class = "column" style="width:18.75%;">
+        <img src="images/retrofits/bracketAttachment.jpg" style="width: 100%; height: 15vw; object-fit: cover;"></img>
+      </div>
+      <div class = "column" style="width:37.5%;">
+        <img src="images/retrofits/fingersAssembler.jpg" style="width: 100%; height: 15vw; object-fit: cover;"></img>
+      </div>
+      <div class = "column" style="width:18.75%;">
+        <img src="images/retrofits/fingersInstaller.jpg" style="width: 100%; height: 15vw; object-fit: cover;"></img>
+      </div>
+      <div class = "spacer_column"></div>
+    </div>
 
-        <hr><hr>
-        <h2>Fixture Assemblies:</h2>
-        <p>These fixtures were designed with the intention of holding parts of varying sizes in place while measuring with automated measuring tools and considering GD and T callouts, like CMMs.</p>
-        <p>I focus on making ergonomic designs that fully constrain degrees of freedom, while aslo considering manufacturability and ease of assembly.</p>
-        <p>I work closely with a team of machinists to ensure that my design meets their expectations.</p>
-      
-        <h3>Solidworks:</h3>
-        <image src="images/fixtures/normTester-explode.png" width="15%" controls preload></image>
-        <image src="images/fixtures/normTester-detail.png" width="16%" controls preload></image>
-        <br><br>
-        <image src="images/fixtures/twoslide-explode.png" width="17%" controls preload></image>
-        <image src="images/fixtures/twoslide-collapse.png" width="14%" controls preload></image>
-        <br><br>
-        <image src="images/fixtures/twopinch-explode.png" width="15.6%" controls preload></image>
-        <image src="images/fixtures/twopinch-collapse.png" width="15.6%" controls preload></image>
-        <br><br>
-        <image src="images/fixtures/tripinch-explode.png" width="16%" controls preload></image>
-        <image src="images/fixtures/tripinch-collapse.png" width="15%" controls preload></image>
-        <br><br>
-        <h3>Manufactured:</h3>
-        <image src="images/fixtures/twopinch.jpg" width="15%" controls preload></image>
-        <image src="images/fixtures/tripinch.jpg" width="35%" controls preload></image>
-        <br><br>
+    <div class = "row" style="width:100%; height: 17vw;">
+      <div class = "spacer_column"></div>
+      <div class = "column" style="width:18.75%;">
+        <img src="images/retrofits/flextrack-hopperFunnelPic.png" style="width: 100%; height: 15vw; object-fit: cover;"></img>
+      </div>
+      <div class = "column" style="width:37.5%;">
+        <img src="images/retrofits/flextrack-trayPic.png" style="width: 100%; height: 15vw; object-fit: cover;"></img>
+      </div>
+      <div class = "column" style="width:18.75%;">
+        <img src="images/retrofits/quadbot-gripperPic.png" style="width: 100%; height: 15vw; object-fit: cover;"></img>
+      </div>
+      <div class = "spacer_column"></div>
+    </div>
 
-        <hr><hr>
-        <h2>Personal Projects:</h2>
-        <em><a href="https://www.thingiverse.com/benjiit/designs" style="color:white;">My Thingiverse Page with some of my project files</a></em><br>
+    <!--Spacer--> <div class = "spacer_row"></div>
+
+    <!--Fixture Details-->
+    <div class = "row" style="width:100%; height: 12vw;">
+      <div class = "spacer_column"></div>
+      <div class="column" style="width:75%; background-color: #222; color: white; padding: 1px 10px;">
+        <h3>Fixture Assemblies:</h3>
+        <p>These fixtures were designed to hold parts of varying sizes in place while inspecting with automated measuring tools and considering GD&T callouts, like CMMs.</p>
+        <p>I implemented ergonomic designs that fully constrain degrees of freedom while aslo considering manufacturability and ease of assembly as verified by a team of machinists.</p>
+      </div>
+      <div class = "spacer_column"></div>
+    </div>
+          
+    <div class = "row" style="width:100%; height: 17vw;">
+      <div class = "spacer_column"></div>
+      <div class = "column" style="width:18.75%;">
+        <img src="images/fixtures/normTester-explode.png" style="width: 100%; height: 15vw; object-fit: cover;"></img>
+      </div>
+      <div class = "column" style="width:18.75%;">
+        <img src="images/fixtures/normTester-detail.png" style="width: 100%; height: 15vw; object-fit: cover;"></img>
+      </div>
+      <div class = "column" style="width:18.75%;">
+        <img src="images/fixtures/twoslide-explode.png" style="width: 100%; height: 15vw; object-fit: cover;"></img>
+      </div>
+      <div class = "column" style="width:18.75%;">
+        <img src="images/fixtures/twoslide-collapse.png" style="width: 100%; height: 15vw; object-fit: cover;"></img>
+      </div>
+      <div class = "spacer_column"></div>
+    </div>
+
+    <div class = "row" style="width:100%; height: 17vw;">
+      <div class = "spacer_column"></div>
+      <div class = "column" style="width:18.75%;">
+        <img src="images/fixtures/twopinch-explode.png" style="width: 100%; height: 15vw; object-fit: cover;"></img>
+      </div>
+      <div class = "column" style="width:18.75%;">
+        <img src="images/fixtures/twopinch-collapse.png" style="width: 100%; height: 15vw; object-fit: cover;"></img>
+      </div>
+      <div class = "column" style="width:18.75%;">
+        <img src="images/fixtures/tripinch-collapse.png" style="width: 100%; height: 15vw; object-fit: cover;"></img>
+      </div>
+      <div class = "column" style="width:18.75%;">
+        <img src="images/fixtures/tripinch-explode.png" style="width: 100%; height: 15vw; object-fit: cover;"></img>
+      </div>
+      <div class = "spacer_column"></div>
+    </div>
+
+    <div class = "row" style="width:100%; height: 17vw;">
+      <div class = "spacer_column"></div>
+      <div class = "spacer_column" style="width:18.75%;"></div>
+      <div class = "column" style="width:18.75%;">
+        <img src="images/fixtures/twopinch.jpg" style="width: 100%; height: 15vw; object-fit: cover;"></img>
+      </div>
+      <div class = "column" style="width:18.75%;">
+        <img src="images/fixtures/tripinch.jpg" style="width: 100%; height: 15vw; object-fit: cover;"></img>
+      </div>
+      <div class = "spacer_column" style="width:18.75%;"></div>
+      <div class = "spacer_column"></div>
+    </div>
+
+    <!--Spacer--> <div class = "spacer_row"></div>
+
+
+    <!--Personal Project Details-->
+    <div class = "row" style="width:100%; height: 18vw;">
+      <div class = "spacer_column"></div>
+      <div class="column" style="width:75%; background-color: #222; color: white; padding: 1px 10px;">
+        <h3>Personal Projects:</h3>
+        <p><em><a href="https://www.thingiverse.com/benjiit/designs" style="color:rgb(0, 248, 236);">My Thingiverse Page with some of my project files</a></em></p>
         <p>In my spare time, I design and 3D print some assemblies for simple functions as needed.</p>
-        <p>I have investigated a variety of 3D modeling softwares and found that AutoDesk Fusion 360 or OnShape have the most inclusive toolset for my projects.</p>
+        <p>I have investigated a variety of 3D modeling software and found that AutoDesk Fusion 360 or OnShape have the most inclusive toolset for my projects.</p>
         <p>SolidWorks for Makers is also suitable for my needs and relates well to my background of extensive professional work using other tiers of SolidWorks.</p>
         <p>While designing and printing these relatively simple projects, I also investigate and retrofit my 3D printer as needed to improve quality and repeatability.</p>
-        
-        <h3>Solidworks:</h3>
-        <image src="images/myprojects/ocuMount-collapse.png" width="15%" controls preload></image>
-        <image src="images/myprojects/ocuMount-explode.PNG" width="15.3%" controls preload></image>
-        <br><br>
-        <image src="images/myprojects/watchCoverCollapse.jpg" width="14.5%" controls preload></image>
-        <image src="images/myprojects/watchCoverExplode.jpg" width="15%" controls preload></image>
-        <image src="images/myprojects/newGear-collapse.PNG" width="15.8%" controls preload></image>
-        <image src="images/myprojects/newGear-explode.PNG" width="15%" controls preload></image>
-        <br>
-        <h3>3D Printer Modifications:</h3>
-        <image src="images/myprojects/lockingPlate-bedwire-guide.PNG" width="22.5%" controls preload></image>
-        <image src="images/myprojects/lockingKnob-n-Plate-pic.PNG" width="17%" controls preload></image>
-        <image src="images/myprojects/zinusTableEnclosure-Full.PNG" width="22%" controls preload></image>
-        <image src="images/myprojects/zinusTableEnclosure-pic.PNG" width="28%" controls preload></image>
-        <br>
-        <h3>3D Printer Enclosure Details:</h3>
-        <image src="images/myprojects/zinusTableEnclosure-hingeClosup.PNG" width="29%" controls preload></image>
-        <image src="images/myprojects/zinusTableEnclosure-hingeClosup-transparency.PNG" width="27.5%" controls preload></image>
-        <image src="images/myprojects/zinusTableEnclosure-magnetLatch.PNG" width="12%" controls preload></image>
-        <br>
-        <h3>Experimental Techniques: All-in-one print</h3>
-        <image src="images/myprojects/gyroFixture-full.png" width="21.5%" controls preload></image>
-        <image src="images/myprojects/gyroFixture-cutaway.png" width="20%" controls preload></image>
-        <br><br>
-
-        <hr><hr>
-        <h2>Early Works:</h2>
-        <p>These are some select examples of projects from my early years of learning CAD and working in engineering internships (circa 2015).</p>
-        <h3>Solidworks:</h3>
-        <image src="images/earlyworks/infiniteRose.jpg" width="11%" controls preload></image>
-        <image src="images/earlyworks/printedVSfinal.JPG" width="15%" controls preload></image>
-        <image src="images/earlyworks/finished-bottom.JPG" width="25.5%" controls preload></image>
-        <image src="images/earlyworks/finished-closed-bottom.JPG" width="35%" controls preload></image>
-        <br><br>
-
-        <hr><hr>
       </div>
+      <div class = "spacer_column"></div>
     </div>
+          
+    <div class = "row" style="width:100%; height: 17vw;">
+      <div class = "spacer_column"></div>
+      <div class = "column" style="width:18.75%;">
+        <img src="images/myprojects/watchCoverCollapse.jpg" style="width: 100%; height: 15vw; object-fit: cover;"></img>
+      </div>
+      <div class = "column" style="width:18.75%;">
+        <img src="images/myprojects/watchCoverExplode.jpg" style="width: 100%; height: 15vw; object-fit: cover;"></img>
+      </div>
+      <div class = "column" style="width:18.75%;">
+        <img src="images/myprojects/newGear-collapse.PNG" style="width: 100%; height: 15vw; object-fit: cover;"></img>
+      </div>
+      <div class = "column" style="width:18.75%;">
+        <img src="images/myprojects/newGear-explode.PNG" style="width: 100%; height: 15vw; object-fit: cover;"></img>
+      </div>
+      <div class = "spacer_column"></div>
+    </div>
+
+    <div class = "row" style="width:100%; height: 17vw;">
+      <div class = "spacer_column"></div>
+      <div class = "column" style="width:18.75%;">
+        <img src="images/myprojects/gyroFixture-full.png" style="width: 100%; height: 15vw; object-fit: cover;"></img>
+      </div>
+      <div class = "column" style="width:18.75%;">
+        <img src="images/myprojects/gyroFixture-cutaway.png" style="width: 100%; height: 15vw; object-fit: cover;"></img>
+      </div>
+      <div class = "column" style="width:18.75%;">
+        <img src="images/myprojects/ocuMount-collapse.png" style="width: 100%; height: 15vw; object-fit: cover;"></img>
+      </div>
+      <div class = "column" style="width:18.75%;">
+        <img src="images/myprojects/ocuMount-explode.PNG" style="width: 100%; height: 15vw; object-fit: cover;"></img>
+      </div>
+      <div class = "spacer_column"></div>
+    </div>
+
+    <div class = "row" style="width:100%; height: 17vw;">
+      <div class = "spacer_column"></div>
+      <div class = "column" style="width:18.75%;">
+        <img src="images/myprojects/lockingPlate-bedwire-guide.PNG" style="width: 100%; height: 15vw; object-fit: cover;"></img>
+      </div>
+      <div class = "column" style="width:18.75%;">
+        <img src="images/myprojects/lockingKnob-n-Plate-pic.PNG" style="width: 100%; height: 15vw; object-fit: cover;"></img>
+      </div>
+      <div class = "column" style="width:18.75%;">
+        <img src="images/myprojects/zinusTableEnclosure-Full.PNG" style="width: 100%; height: 15vw; object-fit: cover;"></img>
+      </div>
+      <div class = "column" style="width:18.75%;">
+        <img src="images/myprojects/zinusTableEnclosure-pic.PNG" style="width: 100%; height: 15vw; object-fit: cover;"></img>
+      </div>
+      <div class = "spacer_column"></div>
+    </div>
+
+    <div class = "row" style="width:100%; height: 17vw;">
+      <div class = "spacer_column"></div>
+      <div class = "column" style="width:18.75%;">
+        <img src="images/myprojects/zinusTableEnclosure-hingeClosup.PNG" style="width: 100%; height: 15vw; object-fit: cover;"></img>
+      </div>
+      <div class = "column" style="width:18.75%;">
+        <img src="images/myprojects/zinusTableEnclosure-hingeClosup-transparency.PNG" style="width: 100%; height: 15vw; object-fit: cover;"></img>
+      </div>
+            <div class = "column" style="width:18.75%;">
+        <img src="images/myprojects/zinusTableEnclosure-magnetLatch.PNG" style="width: 100%; height: 15vw; object-fit: cover;"></img>
+      </div>
+      <div class = "spacer_column" style="width:18.75%;"></div>
+      <div class = "spacer_column"></div>
+    </div>
+
+    <!--Spacer--> <div class = "spacer_row"></div>
+
+    <!--Early Works Details-->
+    <div class = "row" style="width:100%; height: 9vw;">
+      <div class = "spacer_column"></div>
+      <div class="column" style="width:75%; background-color: #222; color: white; padding: 1px 10px;">
+        <h3>Early Works (circa 2014):</h3>
+        <p>These are some select examples of projects from my early years of learning CAD and working in engineering internships.</p>
+      </div>
+      <div class = "spacer_column"></div>
+    </div>
+          
+    <div class = "row" style="width:100%; height: 17vw;">
+      <div class = "spacer_column"></div>
+      <div class = "column" style="width:18.75%;">
+        <img src="images/earlyworks/infiniteRose.jpg" style="width: 100%; height: 15vw; object-fit: cover;"></img>
+      </div>
+      <div class = "column" style="width:18.75%;">
+        <img src="images/earlyworks/printedVSfinal.JPG" style="width: 100%; height: 15vw; object-fit: cover;"></img>
+      </div>
+      <div class = "column" style="width:18.75%;">
+        <img src="images/earlyworks/finished-bottom.JPG" style="width: 100%; height: 15vw; object-fit: cover;"></img>
+      </div>
+      <div class = "column" style="width:18.75%;">
+        <img src="images/earlyworks/finished-closed-bottom.JPG" style="width: 100%; height: 15vw; object-fit: cover;"></img>
+      </div>
+      <div class = "spacer_column"></div>
+    </div>
+
+    <!--Spacer--> <div class = "spacer_row"></div>
+
   </body>
 </html>
