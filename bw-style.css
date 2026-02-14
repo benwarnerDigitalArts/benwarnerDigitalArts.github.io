@@ -21,6 +21,11 @@ h3 {
     font-size:2vw;
 }
 
+a {
+    color:aqua;
+    text-align: center;
+    font-size: 1vw;
+}
 p {
     text-align: center;
     font-size:1vw;
@@ -48,15 +53,16 @@ img {
     background-color: #222;
     float: left;
     padding: 0.5vw 0.5vw;
+    width: 20%;
+    height: 95%;
     border-radius: 5px;
 }
 
 .spacer_column {
     background-color: none;
     float: left;
-    width: 12.5%;
+    width: 10%;
     height: 100%;
-    padding: 5px;
 }
 
 .spacer_row{
@@ -65,11 +71,10 @@ img {
     height: 2vw;
     display: block;
     float: left;
-    padding: 5px;
 }
 
 .header-column {
-    width: 50%;
+    width: 10%;
     height: 8vw;
     float: left;
     background-color: #222;
