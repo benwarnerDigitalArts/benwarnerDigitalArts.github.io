@@ -112,7 +112,6 @@ img {
 
 /* logos in header */
 .header-logo {
-    max-height: 8vw;
     width: auto;
     object-fit: cover;
     pointer-events: none;
@@ -304,9 +303,6 @@ img:hover {
     .hamburger { display: block; }
     .site-title {
         font-size: 1.5rem;
-    }
-    .header-logo {
-        max-height: 8vw;
     }
 
     /* reduce vertical spacing for mobile */
