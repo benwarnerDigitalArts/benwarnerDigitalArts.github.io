@@ -299,14 +299,14 @@ img:hover {
         gap: 0.25rem;
     }
     .nav-buttons .btn{
-        width: 25vw;
+        width: 30vw;
     }
     .hamburger { display: block; }
     .site-title {
         font-size: 1.5rem;
     }
     .header-logo {
-        max-height: 8vw;
+        max-height: 10vw;
     }
 
     /* reduce vertical spacing for mobile */
