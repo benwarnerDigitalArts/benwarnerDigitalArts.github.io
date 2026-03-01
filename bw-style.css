@@ -289,6 +289,7 @@ img:hover {
     }
     .skill-block {
         width: 100%;
+        padding: 2rem;
     }
     /* hide nav until hamburger toggles it */
     .nav-buttons {
@@ -296,6 +297,9 @@ img:hover {
         flex-direction: column;
         align-items: center;
         gap: 0.25rem;
+    }
+    .nav-buttons .btn{
+        width: 25vw;
     }
     .hamburger { display: block; }
     .site-title {
