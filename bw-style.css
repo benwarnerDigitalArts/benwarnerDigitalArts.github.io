@@ -287,6 +287,9 @@ img:hover {
     body {
         margin: 0% 0%;
     }
+    .skill-block {
+        width: 100%;
+    }
     /* hide nav until hamburger toggles it */
     .nav-buttons {
         display: none;
