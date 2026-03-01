@@ -9,28 +9,30 @@
     <link rel="stylesheet" href="bw-style.css">
   </head>
 
-
   <body>
     <!--Header-->
-    <div class = "row" style = "position: sticky; top: 0; z-index: 9;">
-      <div class = "header-column">
-        <div class = "container">
-          <img src = "images/self/falkirkWheel.JPG" style="height: 8vw; width: 100%; object-fit: cover; pointer-events: none;" class="center">
+    <div class="row header-row">
+      <div class="header-column">
+        <div class="container">
+          <img src="images/self/logoReel.png" class="center header-logo" alt="Logo Reel">
         </div>
       </div>
-      <div class = "header-column" style="width: 80%;">
-        <div class = "container">
-          <button class = "btn" style="top: -25%; font-size: 0.5vw; padding: 0.5vw 0.5vw; width:5%; text-align: center;" onclick="navigate('index.html');">Home</button>
-          <button class = "btn" style="top: 30%;  font-size: 0.5vw; padding: 0.5vw 0.5vw; width:5%; text-align: center;" onclick="navigate('engineering.html');">Engineering</button>
-          <button class = "btn" style="top: 86%;  font-size: 0.5vw; padding: 0.5vw 0.5vw; width:5%; text-align: center;" onclick="navigate('digitalarts.html');">Digital Arts</button>
-          <button class = "btn" style="top: 142%; font-size: 0.5vw; padding: 0.5vw 0.5vw; width:6%; text-align: center; background-color: green;" onclick="navigate('games.html');">Games!</button>
-
-          <h1 class = "center" style="top: 10%; font-size:2vw; padding: 0.5vw 0.5vw; text-align: center;">Ben Warner: Games!</h1>
-          <button class = "btn" style="top: 130%; left: 50%; transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); font-size: 1vw; padding: 0.5vw 0.5vw; width:25%;  text-align: center;" onclick="navigate('https://www.linkedin.com/in/benjamin-b-warner');">Contact me on LinkedIn!</button>
+      <div class="header-column header-nav">
+        <div class="container">
+          <h1 class="center site-title">Ben Warner: Engineering and Digital Arts</h1>
+          <nav id="main-nav" class="nav-buttons">
+            <button  title="Home" class="btn" onclick="navigate('index.html');">Home</button>
+            <button  title="Engineering" class="btn" onclick="navigate('engineering.html');">Engineering</button>
+            <button  title="Digital Arts" class="btn" onclick="navigate('digitalarts.html');">Digital Arts</button>
+            <button  title="Games" class="btn" onclick="navigate('games.html');" style = "background-color: green;">Games!</button>            
+            <button  title="LinkedIn" class="btn" onclick="navigate('https://www.linkedin.com/in/benjamin-b-warner');">LinkedIn</button>
+          </nav>
         </div>
       </div>
-      <div class = "header-column">
-        <img src = "images/self/logoReel.png" style="height:8vw; object-fit: cover; pointer-events: none;" class="center">
+      <div class="header-column">
+          <button class="hamburger" aria-label="Menu" aria-expanded="false" aria-controls="main-nav">
+            <span class="hamburger-lines"></span>
+          </button>
       </div>
     </div>
     
@@ -38,76 +40,64 @@
 
     <!--Games-->
     <!--PhageShift-->
-    <div class = "row" style="width:100%; height: 13.5vw;">
-      <div class = "spacer_column"></div>
-      <div class="column" style="width:80%; background-color: #222; color: white; padding: 1px 10px;">
+    <div class = "row">
+      <div class="about-column">
         <h3>PhageShift:</h3>
           <p>The brain child of a team of three: Hayden, Derek, and me (Ben).</p>
           <p>This game features randomly generated obstacles, collectibles, and enemies. The enemies have some AI path finding and seek to destroy the Phage.</p>
           <p>Summary: A Bacteriophage, for some reason, decides to fight Coronavirus. Shoot to kill and get in the bloodstream to progress! After each stage, the field grows!</p>
       </div>
-      <div class = "spacer_column"></div>
     </div>
 
-    <div class = "row" style="width:100%; height: 33vw;">
-      <div class = "spacer_column"></div>
-      <div class = "column" style="width:80%;">
+    <div class = "row">  
+      <div class = "about-column">
         <div class = "container">
-          <img src = "phageShift/phageShiftScreenshot.png" style="width:75%; height: 30vw; object-fit: cover; pointer-events: none;" class="center" alt="Engineering">
-          <button class="btn" onclick="navigate('phageShift/webbuild.html');" style="width: 75%; height: 100%; font-size:2vw; top: 50%; left: 50%; transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%);">Click to play PhageShift Game!</button>
+          <img src = "phageShift/phageShiftScreenshot.png" style="height: 30vw; pointer-events: none;" class="center" alt="phageShift">
+          <button class="ovr-btn" onclick="navigate('phageShift/webbuild.html');">Click to play PhageShift Game!</button>
         </div>
       </div>
-      <div class = "spacer_column""></div>
     </div>
 
     <!--Spacer--> <div class = "spacer_row"></div>
 
     <!--SpiderCrane-->
-    <div class = "row" style="width:100%; height: 13.5vw;">
-      <div class = "spacer_column"></div>
-      <div class="column" style="width:80%; background-color: #222; color: white; padding: 1px 10px;">
+    <div class = "row">
+      <div class="about-column">
         <h3>SpiderCrane - on the Web:</h3>
         <p>I created this game with the goal of implementing some crane behaviors, but added some of my own variations on the standard crane concept.</p>
         <p>Instead, I thought it would be amusing to make a spider with the front legs behaving as cranes. This was more complicated than necessary, yet amusing regardless.</p>
         <p>Summary: Pick up the flies that jiggle around randomly and eat them to win! Crawl around, switch modes, or switch front legs which act as the "cranes".</p>
       </div>
-      <div class = "spacer_column"></div>
     </div>
 
-    <div class = "row" style="width:100%; height: 33vw;">
-      <div class = "spacer_column"></div>
-      <div class = "column" style="width:80%;">
+    <div class = "row">
+      <div class = "about-column">
         <div class = "container">
-          <img src = "spiderWeb/spiderWebScreenshot.png" style="width:75%; height: 30vw; object-fit: cover; pointer-events: none;" class="center" alt="Engineering">
-          <button class="btn" onclick="navigate('spiderWeb/webbuild.html');" style="width: 75%; height: 100%; font-size:2vw; top: 50%; left: 50%; transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%);">Click to play SpiderCrane Game!</button>
+          <img src = "spiderWeb/spiderWebScreenshot.png" style="height: 30vw; pointer-events: none;" class="center" alt="SpidwCrane">
+          <button class="ovr-btn" onclick="navigate('spiderWeb/webbuild.html');">Click to play SpiderCrane Game!</button>
         </div>
       </div>
-      <div class = "spacer_column"></div>
     </div>
-
+   
     <!--Spacer--> <div class = "spacer_row"></div>
 
     <!--aMAZEing-->
-    <div class = "row" style="width:100%; height: 13.5vw;">
-      <div class = "spacer_column"></div>
-      <div class="column" style="width:80%; background-color: #222; color: white; padding: 1px 10px;">
+    <div class = "row"> 
+      <div class="about-column" >
         <h3>aMAZEing:</h3>
           <p>I created this game with the goal of demonstrating basic controls and spawning objects in a maze-like experience.</p>
           <p>Of course, I tried to put an interesting spin on it... I am egg-static at the results!</p>
           <p>Summary: An egg rolls through a "fridge" to gather ingredients. The fridge opens after collecting enough items for an omelette, but what happens next!?</p>
       </div>
-      <div class = "spacer_column"></div>
     </div>
 
-    <div class = "row" style="width:100%; height: 33vw;">
-      <div class = "spacer_column"></div>
-      <div class = "column" style="width:80%;">
+    <div class = "row">
+      <div class = "about-column">
         <div class = "container">
-          <img src = "mazeWeb/mazeWebScreenshot.png" style="width:75%; height: 30vw; object-fit: cover; pointer-events: none;" class="center" alt="Engineering">
-          <button class="btn" onclick="navigate('mazeWeb/webbuild.html');" style="width: 75%; height: 100%; font-size:2vw; top: 50%; left: 50%; transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%);">Click to play aMazeing Game!</button>
+          <img src = "mazeWeb/mazeWebScreenshot.png" style="height: 30vw; pointer-events: none;" class="center" alt="aMAZEing">
+          <button class="ovr-btn" onclick="navigate('mazeWeb/webbuild.html');">Click to play aMazeing Game!</button>
         </div>
       </div>
-      <div class = "spacer_column"></div>
     </div>
 
     <!--Spacer--> <div class = "spacer_row"></div>

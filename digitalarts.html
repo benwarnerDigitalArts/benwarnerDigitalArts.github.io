@@ -11,156 +11,151 @@
 
   <body>
     <!--Header-->
-    <div class = "row" style = "position: sticky; top: 0; z-index: 9;">
-      <div class = "header-column">
-        <div class = "container">
-          <img src = "images/self/falkirkWheel.JPG" style="height: 8vw; width: 100%; object-fit: cover; pointer-events: none;" class="center">
+    <div class="row header-row">
+      <div class="header-column">
+        <div class="container">
+          <img src="images/self/logoReel.png" class="center header-logo" alt="Logo Reel">
         </div>
       </div>
-      <div class = "header-column" style="width: 80%;">
-        <div class = "container">
-          <button class = "btn" style="top: -25%; font-size: 0.5vw; padding: 0.5vw 0.5vw; width:5%; text-align: center;" onclick="navigate('index.html');">Home</button>
-          <button class = "btn" style="top: 30%;  font-size: 0.5vw; padding: 0.5vw 0.5vw; width:5%; text-align: center;" onclick="navigate('engineering.html');">Engineering</button>
-          <button class = "btn" style="top: 86%;  font-size: 0.5vw; padding: 0.5vw 0.5vw; width:6%; text-align: center; background-color: green;" onclick="navigate('digitalarts.html');">Digital Arts</button>
-          <button class = "btn" style="top: 142%; font-size: 0.5vw; padding: 0.5vw 0.5vw; width:5%; text-align: center;" onclick="navigate('games.html');">Games!</button>
-
-          <h1 class = "center" style="top: 10%; font-size:2vw; padding: 0.5vw 0.5vw; text-align: center;">Ben Warner: Digital Arts</h1>
-          <button class = "btn" style="top: 130%; left: 50%; transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); font-size: 1vw; padding: 0.5vw 0.5vw; width:25%;  text-align: center;" onclick="navigate('https://www.linkedin.com/in/benjamin-b-warner');">Contact me on LinkedIn!</button>
+      <div class="header-column header-nav">
+        <div class="container">
+          <h1 class="center site-title">Ben Warner: Engineering and Digital Arts</h1>
+          <nav id="main-nav" class="nav-buttons">
+            <button  title="Home" class="btn" onclick="navigate('index.html');">Home</button>
+            <button  title="Engineering" class="btn" onclick="navigate('engineering.html');">Engineering</button>
+            <button  title="Digital Arts" class="btn" onclick="navigate('digitalarts.html');" style = "background-color: green;">Digital Arts</button>
+            <button  title="Games" class="btn" onclick="navigate('games.html');">Games!</button>            
+            <button  title="LinkedIn" class="btn" onclick="navigate('https://www.linkedin.com/in/benjamin-b-warner');">LinkedIn</button>
+          </nav>
         </div>
       </div>
-      <div class = "header-column">
-        <img src = "images/self/logoReel.png" style="height:8vw; object-fit: cover; pointer-events: none;" class="center">
+      <div class="header-column">
+          <button class="hamburger" aria-label="Menu" aria-expanded="false" aria-controls="main-nav">
+            <span class="hamburger-lines"></span>
+          </button>
       </div>
     </div>
 
     <!--Spacer--> <div class = "spacer_row"></div>
 
     <!--Animations-->
-    <div class = "row" style="width:100%; height: 9vw;">
-      <div class = "spacer_column"></div>
-      <div class="column" style="width:80%; background-color: #222; color: white; padding: 1px 10px;">
+    <div class = "row">
+      <div class="about-column">
         <h3>Animations:</h3>
-        <p  style="text-align: center; font-size:1vw;">These animations were prepared using mostly my own models imported from ZBrush or Maya to demonstrate my rigging capabilities.</p>
-      </div>
-      <div class = "spacer_column"></div>
+        <p>These animations were prepared using mostly my own models imported from ZBrush or Maya to demonstrate my rigging capabilities.</p>
+      </div> 
     </div>
           
-    <div class = "row" style="width:100%; height: 17vw;">
-      <div class = "spacer_column"></div>
+    <div class = "row">
       <div class = "column">
-        <a href="dpa8070/finalProject-wereDog">See WereDog details...</a>
-        <div class = "spacer_row" style="height: 2vw"></div>
-        <video src="dpa8070/finalProject-wereDog/wereDogVid.mp4" style="width: 100%; height: 11.75vw; object-fit: cover;" controls preload></video>
+        <a href="dpa8070/finalProject-wereDog">WereDog details...</a>
+        <div class = "spacer_row"></div>
+        <video src="dpa8070/finalProject-wereDog/wereDogVid.mp4" controls preload></video>
       </div>
       <div class = "column">
-        <a href="dpa8070/unicycleAnimation">See Unicycle details...</a>
-        <div class = "spacer_row" style="height: 2vw"></div>
-        <video src="dpa8070/unicycleAnimation/render/unicycleVid1.mp4" style="width: 100%; height: 11.75vw; object-fit: cover;" controls preload></video>
+        <a href="dpa8070/unicycleAnimation">Unicycle details...</a>
+        <div class = "spacer_row"></div>
+        <video src="dpa8070/unicycleAnimation/render/unicycleVid1.mp4" controls preload></video>
       </div>
       <div class = "column">
-        <a href="dpa8070/stylizedWalk">See Sytlized Walk details...</a>
-        <div class = "spacer_row" style="height: 2vw"></div>
-        <img src="dpa8070/stylizedWalk/images/block-man-walk.gif" style="width: 100%; height: 12vw; object-fit: cover; overflow: hidden;"></img>
+        <a href="dpa8070/stylizedWalk">Sytlized Walk details...</a>
+        <div class = "spacer_row"></div>
+        <img src="dpa8070/stylizedWalk/images/block-man-walk.gif"></img>
       </div>
       <div class = "column">
-        <a href="dpa8070/solarSystem">See Solar System details...</a>
-        <div class = "spacer_row" style="height: 2vw"></div>
-        <img src="dpa8070/solarSystem/images/solarSystem.gif" style="width: 100%; height: 12vw; object-fit: cover;"></img>
+        <a href="dpa8070/solarSystem">Solar System details...</a>
+        <div class = "spacer_row"></div>
+        <img src="dpa8070/solarSystem/images/solarSystem.gif"></img>
       </div>
-      <div class = "spacer_column"></div>
     </div>
 
     <!--Spacer--> <div class = "spacer_row"></div>
 
     <!--Maya and Zbrush-->
-    <div class = "row" style="width:100%; height: 9vw;">
-      <div class = "spacer_column"></div>
-      <div class="column" style="width:80%; background-color: #222; color: white; padding: 1px 10px;">
+    <div class = "row">
+      
+      <div class="about-column">
         <h3>3D Modeling and Sculpting:</h3>
         <p>These models were prepared to demonstrate my abilities to recreate real world scenes from reference images, or just general modeling techniques.</p>
       </div>
-      <div class = "spacer_column"></div>
+      
     </div>
 
     <!--Maya-->
-    <div class = "row" style="width:100%; height: 17vw;">
-      <div class = "spacer_column"></div>
+    <div class = "row">
+      
       <div class = "column">
-        <a href="dpa8070/realToDigital">See Real to Digital details...</a>
-        <div class = "spacer_row" style="height: 2vw"></div>
-        <image src="dpa8070/realToDigital/images/modelingProcess.PNG" style="width:100%; height: 12vw; object-fit: cover;"></image>
+        <a href="dpa8070/realToDigital">Real to Digital details...</a>
+        <div class = "spacer_row"></div>
+        <image src="dpa8070/realToDigital/images/modelingProcess.PNG"></image>
       </div>
       <div class = "column">
-        <a href="dpa8070/orangeJupiter">See Shading and Lighting details...</a>
-        <div class = "spacer_row" style="height: 2vw"></div>
-        <image src="dpa8070/orangeJupiter/images/orangeAndJupiter-noDome.JPG" style="width:100%; height: 12vw; object-fit: cover;"></image>
+        <a href="dpa8070/orangeJupiter">Shading and Lighting details...</a>
+        <div class = "spacer_row"></div>
+        <image src="dpa8070/orangeJupiter/images/orangeAndJupiter-noDome.JPG"></image>
       </div>
       <div class = "column">
-        <a href="dpa8070/sceneReplication">See Scene Replication details...</a>
-        <div class = "spacer_row" style="height: 2vw"></div>
-        <image src="dpa8070/sceneReplication/images/referenceView.png" style="width:100%; height: 12vw; object-fit: cover;"></image>
+        <a href="dpa8070/sceneReplication">Scene Replication details...</a>
+        <div class = "spacer_row"></div>
+        <image src="dpa8070/sceneReplication/images/referenceView.png"></image>
       </div>
       <div class = "column">
-        <a href="unreal-materials/">See Unreal MagmaGem details...</a>
-        <div class = "spacer_row" style="height: 2vw"></div>
-        <video src="unreal-materials/images/finalRender.mp4" style="width:100%; height: 11.75vw; object-fit: cover;" controls preload></video>
+        <a href="unreal-materials/">Unreal MagmaGem details...</a>
+        <div class = "spacer_row"></div>
+        <video src="unreal-materials/images/finalRender.mp4" controls preload></video>
       </div>
-      <div class = "spacer_column"></div>
+      
     </div>
 
     <!--ZBrush-->
-    <div class = "row" style="width:100%; height: 17vw;">
-      <div class = "spacer_column"></div>
-      <div class = "column" style="object-fit: fit;">
-        <a href="/zbrush/">See all Weredog ZBrush views...</a>
-        <div class = "spacer_row" style="height: 2vw"></div>
-        <image src="images/zBrush/Warner_Ben_P6-04.jpg" style="width:100%; height: 12vw; object-fit: cover;"></image>
+    <div class = "row">
+      <div class = "column">
+        <a href="/zbrush/">Weredog ZBrush views...</a>
+        <div class = "spacer_row"></div>
+        <image src="images/zBrush/Warner_Ben_P6-04.jpg"></image>
       </div>
-      <div class = "column" style="object-fit: fit;">
-        <a href="/zbrush/">See all Weredog ZBrush views...</a>
-        <div class = "spacer_row" style="height: 2vw"></div>
-        <image src="images/zBrush/Warner_Ben_P6-03.jpg" style="width:100%; height: 12vw; object-fit: cover;"></image>
+      <div class = "column">
+        <a href="/zbrush/">Weredog ZBrush views...</a>
+        <div class = "spacer_row"></div>
+        <image src="images/zBrush/Warner_Ben_P6-03.jpg"></image>
       </div>
-      <div class = "column" style="object-fit: fit;">
-        <a href="/zbrush/">See all Weredog ZBrush views...</a>
-        <div class = "spacer_row" style="height: 2vw"></div>
-        <image src="images/zBrush/Warner_Ben_P6-01.jpg" style="width:100%; height: 12vw; object-fit: cover;"></image>
+      <div class = "column">
+        <a href="/zbrush/">Weredog ZBrush views...</a>
+        <div class = "spacer_row"></div>
+        <image src="images/zBrush/Warner_Ben_P6-01.jpg"></image>
       </div>
-      <div class = "column" style="object-fit: fit;">
-        <a href="/zbrush/">See all Weredog ZBrush views...</a>
-        <div class = "spacer_row" style="height: 2vw"></div>
-        <image src="images/zBrush/Warner_Ben_P6-05.jpg" style="width:100%; height: 12vw; object-fit: cover;"></image>
+      <div class = "column">
+        <a href="/zbrush/">Weredog ZBrush views...</a>
+        <div class = "spacer_row"></div>
+        <image src="images/zBrush/Warner_Ben_P6-05.jpg"></image>
       </div>
-      <div class = "spacer_column"></div>
+      
     </div>
 
     <!--Spacer--> <div class = "spacer_row"></div>
 
     <!--Compositing?-->
-    <div class = "row" style="width:100%; height: 11vw;">
-      <div class = "spacer_column"></div>
-      <div class="column" style="width:80%; background-color: #222; color: white; padding: 1px 10px;">
+    <div class = "row">
+      <div class="about-column">
         <h3>2D Compositing:</h3>
         <p>These are several selected works from a compositing course demonstrating ( 2D and some 3D) and green screen principles (rotoscoping and keying).</p>
         <p>Film clips featuring NYC were captured by myself and other clips are from Nuke training resources. Additional effects were sourced from ActionVFX.</p>
       </div>
-      <div class = "spacer_column"></div>
+      
     </div>
-    <div class = "row" style="width:100%; height: 14vw;">
-      <div class = "spacer_column"></div>
+    <div class = "row">
       <div class = "column">
-        <video src="compositing/TransformedMan.mov" style="width:100%; height: 11.75vw; object-fit: cover;" controls preload></video>
+        <video src="compositing/TransformedMan.mov" controls preload></video>
       </div>
       <div class = "column">
-        <video src="compositing/KeyedHand.mov" style="width:100%; height: 11.75vw; object-fit: cover;" controls preload></video>
+        <video src="compositing/KeyedHand.mov" controls preload></video>
       </div>
       <div class = "column">
-        <video src="compositing/KeyedCat.mov" style="width:100%; height: 11.75vw; object-fit: cover;" controls preload></video>
+        <video src="compositing/KeyedCat.mov" controls preload></video>
       </div>
       <div class = "column">
-        <video src="compositing/portal-subbed.mp4" style="width:100%; height: 11.75vw; object-fit: cover;" controls preload></video>
+        <video src="compositing/portal-subbed.mp4" controls preload></video>
       </div>
-      <div class = "spacer_column"></div>
     </div>
 
     <!--Spacer--> <div class = "spacer_row"></div>

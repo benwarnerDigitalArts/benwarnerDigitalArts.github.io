@@ -11,90 +11,93 @@
 
   <body>
     <!--Header-->
-    <div class = "row" style = "position: sticky; top: 0; z-index: 9;">
-      <div class = "header-column">
-        <div class = "container">
-          <img src = "images/self/falkirkWheel.JPG" style="height: 8vw; width: 100%; object-fit: cover; pointer-events: none;" class="center">
+    <div class="row header-row">
+      <div class="header-column">
+        <div class="container">
+          <img src="images/self/logoReel.png" class="center header-logo" alt="Logo Reel">
         </div>
       </div>
-      <div class = "header-column" style="width: 80%;">
-        <div class = "container">
-          <button class = "btn" style="top: -25%; font-size: 0.5vw; padding: 0.5vw 0.5vw; width:6%; text-align: center; background-color: green;" onclick="navigate('index.html');">Home</button>
-          <button class = "btn" style="top: 30%;  font-size: 0.5vw; padding: 0.5vw 0.5vw; width:5%; text-align: center;" onclick="navigate('engineering.html');">Engineering</button>
-          <button class = "btn" style="top: 86%;  font-size: 0.5vw; padding: 0.5vw 0.5vw; width:5%; text-align: center;" onclick="navigate('digitalarts.html');">Digital Arts</button>
-          <button class = "btn" style="top: 142%; font-size: 0.5vw; padding: 0.5vw 0.5vw; width:5%; text-align: center;" onclick="navigate('games.html');">Games!</button>
-
-          <h1 class = "center" style="top: 10%; font-size:2vw; padding: 0.5vw 0.5vw; text-align: center;">Ben Warner: Engineering and Digital Arts</h1>
-          <button class = "btn" style="top: 130%; left: 50%; transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); font-size: 1vw; padding: 0.5vw 0.5vw; width:25%;  text-align: center;" onclick="navigate('https://www.linkedin.com/in/benjamin-b-warner');">Contact me on LinkedIn!</button>
+      <div class="header-column header-nav">
+        <div class="container">
+          <h1 class="center site-title">Ben Warner: Engineering and Digital Arts</h1>
+          <nav id="main-nav" class="nav-buttons">
+            <button  title="Home" class="btn" onclick="navigate('index.html');" style = "background-color: green;">Home</button>
+            <button  title="Engineering" class="btn" onclick="navigate('engineering.html');">Engineering</button>
+            <button  title="Digital Arts" class="btn" onclick="navigate('digitalarts.html');">Digital Arts</button>
+            <button  title="Games" class="btn" onclick="navigate('games.html');">Games!</button>            
+            <button  title="LinkedIn" class="btn" onclick="navigate('https://www.linkedin.com/in/benjamin-b-warner');">LinkedIn</button>
+          </nav>
         </div>
       </div>
-      <div class = "header-column">
-        <img src = "images/self/logoReel.png" style="height:8vw; object-fit: cover; pointer-events: none;" class="center">
+      <div class="header-column">
+          <button class="hamburger" aria-label="Menu" aria-expanded="false" aria-controls="main-nav">
+            <span class="hamburger-lines"></span>
+          </button>
       </div>
     </div>
 
     <!--Spacer--> <div class = "spacer_row"></div>
 
-    <!--Projects-->
-    <div class = "row"  style="width:100%; height:7vw;">
-      <div class = "spacer_column"></div>
-      <div class = "column" style="width:80%; background-color: #222; color: white; padding: 1px 10px;">
-        <h3>Projects:</h3>
+    <!--Portfolio-->
+    <div class="section-header">
+      
+      <div class="header-column" >
+        <h3>Portfolios:</h3>
       </div>
-      <div class = "spacer_column"></div>
+      
     </div>
     
     <!--Button Row-->
-    <div class = "row"  style="width:100%; height:17vw;">
-      <div class = "spacer_column"></div>
+    <div class="row">
+      
       <!--Engineering Button-->
-      <div class = "column" style="width:26.66%;">
-        <div class = "container">
-          <img src = "images/fixtures/tripinch-explode.png" style="width:100%; height: 15vw; object-fit: cover; pointer-events: none;" class="center" alt="Engineering">
-          <button class="btn" onclick="navigate('engineering.html');" style="width: 100%; height: 100%; font-size:2vw; top: 50%; left: 50%; transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%);">Engineering</button>
+      <div class="project_btn_column">
+        <div class="container">
+          <img src="images/fixtures/tripinch-explode.png" class="center">
+          <button class="ovr-btn" onclick="navigate('engineering.html');" title="Engineering">Engineering</button>
         </div>
       </div>
 
       <!--Games Button-->
-      <div class = "column" style="width:26.66%;">
-        <div class = "container">
-          <img src = "dpa8070/sceneReplication/images/referenceView.png" style="width:100%; height: 15vw; object-fit: cover; pointer-events: none;" class="center" alt="DigitalArt">
-          <button class="btn" onclick="navigate('digitalarts.html');" style="width: 100%; height: 100%; font-size:2vw; top: 50%; left: 50%; transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%);">Digital Arts</button>
+      <div class="project_btn_column">
+        <div class="container">
+          <img src="dpa8070/sceneReplication/images/referenceView.png" class="center">
+          <button class="ovr-btn" onclick="navigate('digitalarts.html');" title="Digital Art">Digital Arts</button>
         </div>
       </div>
 
       <!--Digital Arts Button-->
-      <div class = "column" style="width:26.66%;">
-        <div class = "container">
-          <img src = "phageShift/phageShiftScreenshot.png" style="width:100%; height: 15vw; object-fit: cover; pointer-events: none;" class="center" alt="Games">
-          <button class="btn" onclick="navigate('games.html');" style="width: 100%; height: 100%; font-size:2vw; top: 50%; left: 50%; transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%);">Games!</button>
+      <div class="project_btn_column">
+        <div class="container">
+          <img src="phageShift/phageShiftScreenshot.png" class="center">
+          <button class="ovr-btn" onclick="navigate('games.html');" title="Games">Games!</button>
         </div>
       </div>
-      <div class = "spacer_column"></div>
+      
     </div>
 
-    <!--Spacer--> <div class = "spacer_row"></div>
+    <!--Spacer--> <div class="spacer_row"></div>
 
     <!--Skills-->
-    <div class = "row" style="width:100%; height:7vw;">
-      <div class = "spacer_column"></div>
-      <div class = "column" style="width:80%; background-color: #222; color: white; padding: 1px 1px;">
+    <div class="section-header">
+      
+      <div class="header-column">
         <h3>Skills:</h3>
       </div>
-      <div class = "spacer_column"></div>
+      
     </div>
 
     <!--Skills Row-->
-    <div class="row" style="width:100%; height: 18vw;">
-      <div class = "spacer_column"></div>
+    <div class="row skills-row">
+      
       <!--Engineering-->
-      <div class = "column" style="width:26.66%;">
-        <div class = "center" style="width:100%; background-color: #222; color: white; padding: 1px 1px;">
+      <div class="skill-block">
+        <div class="center">
           <h3>Engineering</h3>
           <ul>
             <li>SolidWorks, Catia, Fusion 360, Siemens NX, Creo</li>
             <li>PDM/PLM, 3DXExpeirnce, CAM, CMMs</li>
-            <li>DFM/DFA, GD&T, Machining, Welding</li>
+            <li>DFM/DFA, GD&amp;T, Machining, Welding</li>
             <li>FEA, CFD, Tolerance Analysis, DOE</li>
             <li>3D Printing: DFAM, FDM, SLS, SLA, DMLS</li>
           </ul>
@@ -102,8 +105,8 @@
       </div>
 
       <!--Programming-->
-      <div class = "column" style="width:26.66%;">
-        <div class = "center" style="width:100%; background-color: #222; color: white; padding: 1px 1px;">
+      <div class="skill-block">
+        <div class="center">
           <h3>Computer Science</h3>
           <ul>
             <li>Matlab, Fanuc PLC, Simulink</li> 
@@ -116,8 +119,8 @@
       </div>
 
       <!--Game Dev-->
-      <div class = "column" style="width:26.66%;">
-        <div class = "center" style="width:100%; background-color: #222; color: white; padding: 1px 1px;">
+      <div class="skill-block">
+        <div class="center">
           <h3>Digital Arts</h3>
           <ul>
             <li>Microsoft Office, Adobe Suite</li>
@@ -128,23 +131,23 @@
           </ul>
         </div>
       </div>
-      <div class = "spacer_column"></div>
+      
     </div>
 
-    <!--Spacer--> <div class = "spacer_row"></div>
+    <!--Spacer--> <div class="spacer_row"></div>
 
     <!--About me-->
-    <div class = "row" style="width:100%; height:7vw;">
-      <div class = "spacer_column"></div>
-      <div class = "column" style="width:80%; background-color: #222; color: white; padding: 1px 10px;">
+    <div class="section-header">
+      
+      <div class="header-column">
         <h3>About Me:</h3>
       </div>
-      <div class = "spacer_column"></div>
+      
     </div>
 
-    <div class = "row" style="width:100%; height:15vw;">
-      <div class = "spacer_column"></div>
-      <div class = "column" style="width:80%; background-color: #222; color: white; padding: 1px 10px;">
+    <div class="row">
+      
+      <div class="about-column">
         <p>I am a Mechanical Engineer with a Bachelor's Degree from Clemson University, dedicated to improving the world through sustainable practices in both my personal and professional life. I am passionate about working with emerging technologies such as VR and 3D printing and continuously seek opportunities to enhance and innovate these fields.
         <br><br>
         Proficient in multiple programming languages, including C++ and Python, I am also highly skilled in design software such as SolidWorks and other CAD tools, with extensive experience in data management using PDM, Windchill, and 3DExperience.
@@ -155,7 +158,7 @@
         <br><br>
         </p>
       </div>
-      <div class = "spacer_column"></div>
+      
     </div>
 
     <!--Spacer--> <div class = "spacer_row"></div>

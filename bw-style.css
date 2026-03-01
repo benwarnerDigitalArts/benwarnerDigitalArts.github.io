@@ -1,7 +1,7 @@
-body{ 
+body{
     font-family: "Times New Roman", Times, serif;
     background-image: linear-gradient(to bottom right, green, #222);
-    margin: 0;
+    margin: 0% 5%;
     background-attachment: fixed;
 }
 
@@ -45,41 +45,168 @@ img {
     vertical-align: middle;
 }
 
+/* rows become flexible containers so content can wrap on smaller screens */
 .row {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
+/* default column sizing for desktop; flex allows wrapping on mobile */
 .column {
     background-color: #222;
-    float: left;
-    padding: 0.5vw 0.5vw;
-    width: 20%;
-    height: 95%;
-    border-radius: 5px;
+    color: white;
+    padding: 0.5rem;
+    flex: 1 1 25%;
+    max-width: 25%;
+    
+}
+.project_btn_column {
+    background-color: #222;
+    padding: 0.5rem;
+    flex: 1 1 33.33%;
+    max-width: 33.33%;
+    
 }
 
-.spacer_column {
-    background-color: none;
-    float: left;
-    width: 10%;
-    height: 100%;
-}
-
+/* vertical space between sections */
 .spacer_row{
-    background-color: none;
     width: 100%;
-    height: 2vw;
-    display: block;
-    float: left;
+    height: 2rem;
 }
 
+/* header layout: three columns with logo/nav/logo */
 .header-column {
-    width: 10%;
-    height: 8vw;
-    float: left;
+    flex: 0 0 10%;
+    max-width: 100%;
     background-color: #222;
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+/* navigation column expands between logos */
+.header-nav {
+    flex: 1 1 80%;
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+.header-row {
+    position: sticky;
+    top: 0;
+    z-index: 9;
+    
+    background-color: #222;
+}
+
+.section-row {
+    width: 100%;
+    
+}
+
+/* logos in header */
+.header-logo {
+    max-height: 8vw;
+    width: auto;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+/* main title styling */
+.site-title {
+    font-size: 2vw;
+    text-align: center;
+    margin: 0.5rem 0;
+}
+
+/* navigation buttons container */
+.nav-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+/* hamburger button (hidden on desktop) */
+.hamburger {
+    display: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0.4rem;
+}
+.hamburger .hamburger-lines {
+    display: inline-block;
+    width: 24px;
+    height: 16px;
+    position: relative;
+}
+.hamburger .hamburger-lines::before,
+.hamburger .hamburger-lines::after,
+.hamburger .hamburger-lines span {
+    content: '';
+    display: block;
+    height: 2px;
+    background: #fff;
+    margin: 5px 0;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+/* when nav is open, show nav on small screens */
+.header-nav.nav-open .nav-buttons {
+    display: flex;
+}
+
+/* override default .btn positioning inside nav so they flow normally */
+.nav-buttons .btn {
+    position: static;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    width: auto;
+}
+
+/* section header rows rarely need explicit height */
+.section-header .column {
+    background-color: #222;
+    color: white;
+    padding: 0.5rem;   
+    
+}
+
+/* project buttons: ensure images scale and buttons centered */
+.project-button .container {
+    position: relative;
+    width: 100%;
+}
+
+/* skill blocks and about column share same visuals */
+.skill-block {
+    width: 33.33%;
+    background-color: #222;
+    color: white;
+    padding: 0.5rem;
+
+}
+
+.about-column{
+    width: 100%;
+    background-color: #222;
+    color: white;
+    padding: 0.5rem;
+    
+}
+
+/* roughly equalize font sizes using rem instead of vw */
+h3 { font-size: 1.5rem; }
+a { font-size: 1rem; }
+p { font-size: 1rem; }
+ul { font-size: 1rem; }
 
 .center {
     display: block;
@@ -97,13 +224,23 @@ img {
     width: 100%;
     height: auto;
     overflow: hidden;
+    border-radius: 5px;
+    height: 15vw;
+    object-fit: cover;
+}
+
+video {
+    width:100%;
+    height: 14.75vw;
+    object-fit: cover;
+    border-radius: 5px;
 }
 
 img:hover {
   position: relative;
   z-index: 2;
   transform: scale(1.25);
-  object-fit: fill;
+  object-fit: cover;
   overflow: visible;
 }
 
@@ -118,7 +255,65 @@ img:hover {
     border-radius: 5px;
     text-align: center;
 }
+.ovr-btn {
+    position: absolute;
+    background-color: rgb(0, 130, 130,0.5);
+    color: white;
+    font-size: 4vw;
+    padding: 20px 20px;
+    border: none;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.ovr-btn:hover {
+    background-color: rgba(0, 250, 15, 0.75);
+}
 
 .btn:hover {
     background-color: rgba(0, 250, 15, 0.75);
 }
+
+/* responsive tweaks for narrower viewports */
+@media (max-width: 768px) {
+    /* stack header columns vertically */
+    body {
+        margin: 0% 0%;
+    }
+    /* hide nav until hamburger toggles it */
+    .nav-buttons {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.25rem;
+    }
+    .hamburger { display: block; }
+    .site-title {
+        font-size: 1.5rem;
+    }
+    .header-logo {
+        max-height: 8vw;
+    }
+
+    /* reduce vertical spacing for mobile */
+    .spacer_row {
+        height: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h3 { font-size: 1.2rem; }
+    p, ul, a, .btn {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.6rem;
+    }
+    .site-title { font-size: 1.2rem; }
+}
+/* end of responsive rules */
