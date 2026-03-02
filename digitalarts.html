@@ -12,36 +12,44 @@
   <body>
     <!--Header-->
     <div class="row header-row">
-      <div class="header-column">
-        <div class="container">
+      <div class="row">
+        <div class="header-column header-logo-pane">
           <img src="images/self/logoReel.png" class="center header-logo" alt="Logo Reel">
         </div>
-      </div>
-      <div class="header-column header-nav">
-        <div class="container">
+        <div class="header-column header-title">
           <h1 class="center site-title">Ben Warner: Engineering and Digital Arts</h1>
-          <nav id="main-nav" class="nav-buttons">
-            <button  title="Home" class="btn" onclick="navigate('index.html');">Home</button>
-            <button  title="Engineering" class="btn" onclick="navigate('engineering.html');">Engineering</button>
-            <button  title="Digital Arts" class="btn" onclick="navigate('digitalarts.html');" style = "background-color: green;">Digital Arts</button>
-            <button  title="Games" class="btn" onclick="navigate('games.html');">Games!</button>            
-            <button  title="LinkedIn" class="btn" onclick="navigate('https://www.linkedin.com/in/benjamin-b-warner');">LinkedIn</button>
-          </nav>
         </div>
+        <div class="header-column header-logo-pane"></div>
       </div>
-      <div class="header-column">
+      <div class="row">
+        <div class="header-column header-nav">
           <button class="hamburger" aria-label="Menu" aria-expanded="false" aria-controls="main-nav">
             <span class="hamburger-lines"></span>
           </button>
+          <div class="container">
+            <nav id="main-nav" class="nav-buttons">
+              <button  title="Home" class="btn" onclick="navigate('index.html');">Home</button>
+              <button  title="Engineering" class="btn" onclick="navigate('engineering.html');">Engineering</button>
+              <button  title="Digital Arts" class="btn" onclick="navigate('digitalarts.html');" style = "background-color: green;">Digital Arts</button>
+              <button  title="Games" class="btn" onclick="navigate('games.html');">Games!</button>            
+              <button  title="LinkedIn" class="btn" onclick="navigate('https://www.linkedin.com/in/benjamin-b-warner');">LinkedIn</button>
+            </nav>
+          </div>
+        </div>
       </div>
     </div>
 
     <!--Spacer--> <div class = "spacer_row"></div>
 
     <!--Animations-->
+    <div class="section-header">
+      <div class="gradient-border">
+        <h3>Animations:</h3>
+      </div>
+    </div>
+
     <div class = "row">
       <div class="about-column">
-        <h3>Animations:</h3>
         <p>These animations were prepared using mostly my own models imported from ZBrush or Maya to demonstrate my rigging capabilities.</p>
       </div> 
     </div>
@@ -72,18 +80,20 @@
     <!--Spacer--> <div class = "spacer_row"></div>
 
     <!--Maya and Zbrush-->
-    <div class = "row">
-      
-      <div class="about-column">
+    <div class="section-header">
+      <div class="gradient-border">
         <h3>3D Modeling and Sculpting:</h3>
-        <p>These models were prepared to demonstrate my abilities to recreate real world scenes from reference images, or just general modeling techniques.</p>
       </div>
-      
+    </div>
+    
+    <div class = "row">
+      <div class="about-column">
+        <p>These models were prepared to demonstrate my abilities to recreate real world scenes from reference images, or just general modeling techniques.</p>
+      </div>    
     </div>
 
     <!--Maya-->
     <div class = "row">
-      
       <div class = "column">
         <a href="dpa8070/realToDigital">Real to Digital details...</a>
         <div class = "spacer_row"></div>
@@ -104,7 +114,6 @@
         <div class = "spacer_row"></div>
         <video src="unreal-materials/images/finalRender.mp4" controls preload></video>
       </div>
-      
     </div>
 
     <!--ZBrush-->
@@ -129,20 +138,24 @@
         <div class = "spacer_row"></div>
         <image src="images/zBrush/Warner_Ben_P6-05.jpg"></image>
       </div>
-      
     </div>
 
     <!--Spacer--> <div class = "spacer_row"></div>
 
     <!--Compositing?-->
+    <div class="section-header">
+      <div class="gradient-border">
+        <h3>2D Compositing:</h3>
+      </div>
+    </div>
+
     <div class = "row">
       <div class="about-column">
-        <h3>2D Compositing:</h3>
         <p>These are several selected works from a compositing course demonstrating ( 2D and some 3D) and green screen principles (rotoscoping and keying).</p>
         <p>Film clips featuring NYC were captured by myself and other clips are from Nuke training resources. Additional effects were sourced from ActionVFX.</p>
       </div>
-      
     </div>
+    
     <div class = "row">
       <div class = "column">
         <video src="compositing/TransformedMan.mov" controls preload></video>

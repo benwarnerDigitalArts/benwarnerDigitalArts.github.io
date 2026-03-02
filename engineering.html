@@ -12,38 +12,53 @@
   <body>
     <!--Header-->
     <div class="row header-row">
-      <div class="header-column">
-        <div class="container">
+      <div class="row">
+        <div class="header-column header-logo-pane">
           <img src="images/self/logoReel.png" class="center header-logo" alt="Logo Reel">
         </div>
-      </div>
-      <div class="header-column header-nav">
-        <div class="container">
+        <div class="header-column header-title">
           <h1 class="center site-title">Ben Warner: Engineering and Digital Arts</h1>
-          <nav id="main-nav" class="nav-buttons">
-            <button  title="Home" class="btn" onclick="navigate('index.html');">Home</button>
-            <button  title="Engineering" class="btn" onclick="navigate('engineering.html');" style = "background-color: green;">Engineering</button>
-            <button  title="Digital Arts" class="btn" onclick="navigate('digitalarts.html');">Digital Arts</button>
-            <button  title="Games" class="btn" onclick="navigate('games.html');">Games!</button>            
-            <button  title="LinkedIn" class="btn" onclick="navigate('https://www.linkedin.com/in/benjamin-b-warner');">LinkedIn</button>
-          </nav>
         </div>
+        <div class="header-column header-logo-pane"></div>
       </div>
-      <div class="header-column">
+      <div class="row">
+        <div class="header-column header-nav">
           <button class="hamburger" aria-label="Menu" aria-expanded="false" aria-controls="main-nav">
             <span class="hamburger-lines"></span>
           </button>
+          <div class="container">
+            <nav id="main-nav" class="nav-buttons">
+              <button  title="Home" class="btn" onclick="navigate('index.html');">Home</button>
+              <button  title="Engineering" class="btn" onclick="navigate('engineering.html');" style = "background-color: green;">Engineering</button>
+              <button  title="Digital Arts" class="btn" onclick="navigate('digitalarts.html');">Digital Arts</button>
+              <button  title="Games" class="btn" onclick="navigate('games.html');">Games!</button>            
+              <button  title="LinkedIn" class="btn" onclick="navigate('https://www.linkedin.com/in/benjamin-b-warner');">LinkedIn</button>
+            </nav>
+          </div>
+        </div>
       </div>
     </div>
 
     <!--Spacer--> <div class = "spacer_row"></div>
 
     <!--Product Details-->
+    <div class="section-header">
+      <div class="gradient-border">
+        <h3>Product Designs:</h3>
+      </div>
+    </div> 
+
+    </div>
     <div class = "row">
       <div class="about-column">
-        <h3>Product Designs:</h3>
         <p>Here are brief glimpses into the products that I have designed which consists of weldments, sheet metal, sensitive equipment, and electrical enclosures.</p>
         <p>These assemblies were developed with reverse engineering, flow analysis, and structural simulation. They feature piping and electrical routing with ASME compliance.</p>
+        <p>Many of my recent designs are related my time leading the mechanical engineering for several of the worlds first NH3 vehicles. More can be read about those prototypes here:</p>
+        <ul style = "text-align: center;">
+          <li><a href="https://amogy.co/news/amogy-demonstrates-first-ammonia-powered-zero-emissions-tractor">Amogy Demonstrates First Ammonia-Powered Zero Emissions Tractor</a></li>
+          <li><a href="https://amogy.co/news/amogy-presents-worlds-first-ammonia-powered-zero-emission-semi-truck">Amogy Presents Worlds First Ammonia-Powered Zero Emission Semi-Truck</a></li>
+          <li><a href="https://amogy.co/news/amogy-sails-worlds-first-carbon-free-ammonia-powered-maritime-vessel">Amogy Sails Worlds First Carbon-Free Ammonia-Powered Maritime Vessel</a></li>
+        </ul>
       </div> 
     </div>
           
@@ -77,11 +92,21 @@
     <!--Spacer--> <div class = "spacer_row"></div>
 
     <!--Retorfit Details-->
+    <div class="section-header">
+      <div class="gradient-border">
+        <h3>Retrofits:</h3>
+      </div>
+    </div> 
+
     <div class = "row">
       <div class="about-column">
-        <h3>Retrofits:</h3>
         <p>These retrofits were designed with the intention of being 3D printed to enable rabid prototyping and immediate implementation.</p>
         <p>This material was feasible due to being in low-wear and low-stress environments in some cases while also enabling break-away functionality in some cases.</p>
+        <p>My earlier works are related to optimizing world-class automation equipment at Boeing. More can be read about those systems here:</p>
+        <ul style = "text-align: center;">
+          <li><a href="https://www.electroimpact.com/products/flextrack/overview">Electroimpact FlexTrack Systems</a></li>
+          <li><a href="https://electroimpact.com/whitepapers/2017-01-2094.pdf">Electroimpact Whitepaper on Quadbot Systems</a></li>
+        </ul>
       </div>
     </div>
           
@@ -89,34 +114,43 @@
       <div class = "column">
         <img src="images/retrofits/bracketAttachment.jpg"></img>
       </div>
-      <div class = "column" style="width:50%; max-width: 50%;">
-        <img src="images/retrofits/fingersAssembler.jpg"></img>
-      </div>
       <div class = "column">
         <img src="images/retrofits/fingersInstaller.jpg"></img>
+      </div>
+      <div class = "column">
+        <img src="images/retrofits/flextrack-hopperFunnelPic.png"></img>
+      </div>
+            <div class = "column">
+        <img src="images/retrofits/quadbot-gripperPic.png"></img>
       </div>
     </div>
 
     <div class = "row">
       <div class = "column">
-        <img src="images/retrofits/flextrack-hopperFunnelPic.png"></img>
-      </div>
-      <div class = "column" style="width:50%; max-width: 50%;">
-        <img src="images/retrofits/flextrack-trayPic.png"></img>
+        <img src="images/retrofits/fingersAssembler.jpg"></img>
       </div>
       <div class = "column">
-        <img src="images/retrofits/quadbot-gripperPic.png"></img>
+        <img src="images/retrofits/flextrack-trayPic.png"></img>
       </div>
     </div>
 
     <!--Spacer--> <div class = "spacer_row"></div>
 
     <!--Fixture Details-->
+    <div class="section-header">
+      <div class="gradient-border">
+        <h3>Fixture Assemblies:</h3>
+      </div>
+    </div> 
+
     <div class = "row">
       <div class="about-column">
-        <h3>Fixture Assemblies:</h3>
         <p>These fixtures were designed to hold parts of varying sizes in place while inspecting with automated measuring tools and considering GD&T callouts, like CMMs.</p>
         <p>I use ergonomic designs that fully constrain degrees of freedom while aslo considering manufacturability and ease of assembly as verified by a team of machinists.</p>
+        <p>My fixture design work at was primarily focused on holding Stryker joint replacement components in place on CMMs (Coordinate Measurement Machines). More can be read about those components here:</p>
+        <ul style = "text-align: center;">
+          <li><a href="https://www.stryker.com/us/en/portfolios/orthopaedics/joint-replacement.html">Stryker Orthopaedics Joint Replacement components</a></li>
+        </ul>
       </div>
     </div>
           
@@ -162,14 +196,21 @@
     <!--Spacer--> <div class = "spacer_row"></div>
 
     <!--Personal Project Details-->
+    <div class="section-header">
+      <div class="gradient-border">
+        <h3>Personal Projects:</h3>
+      </div>
+    </div> 
+
     <div class = "row">
       <div class="about-column">
-        <h3>Personal Projects:</h3>
-        <p><em><a href="https://www.thingiverse.com/benjiit/designs" style="color:rgb(0, 248, 236);">My Thingiverse page with some of my project files</a></em></p>
         <p>In my spare time, I design and 3D print some assemblies for simple functions as needed.</p>
         <p>I have investigated a variety of 3D modeling software and found that AutoDesk Fusion 360 or OnShape have the most inclusive toolset for my projects.</p>
         <p>SolidWorks for Makers is also suitable for my needs and relates well to my background of extensive professional work using other tiers of SolidWorks.</p>
         <p>While designing and printing these relatively simple projects, I also investigate and retrofit my 3D printer as needed to improve quality and repeatability.</p>
+        <ul style = "text-align: center;">
+          <p><em><a href="https://www.thingiverse.com/benjiit/designs" style="color:rgb(0, 248, 236);">My Thingiverse page with some of my project files</a></em></p>
+        </ul>
       </div>
     </div>
           
@@ -204,7 +245,6 @@
     </div>
 
     <div class = "row">
-      
       <div class = "column">
         <img src="images/myprojects/lockingPlate-bedwire-guide.PNG"></img>
       </div>
@@ -217,11 +257,9 @@
       <div class = "column">
         <img src="images/myprojects/zinusTableEnclosure-pic.PNG"></img>
       </div>
-      
     </div>
 
-    <div class = "row">
-      
+    <div class = "row"> 
       <div class = "column">
         <img src="images/myprojects/zinusTableEnclosure-hingeClosup.PNG"></img>
       </div>
@@ -231,24 +269,24 @@
             <div class = "column">
         <img src="images/myprojects/zinusTableEnclosure-magnetLatch.PNG"></img>
       </div>
-      
-      
     </div>
 
     <!--Spacer--> <div class = "spacer_row"></div>
 
     <!--Early Works Details-->
-    <div class = "row">
-      
-      <div class="about-column">
+    <div class="section-header">
+      <div class="gradient-border">
         <h3>Early Works (circa 2014):</h3>
-        <p>These are some select examples of projects from my early years of learning CAD and working in engineering internships.</p>
       </div>
-      
+    </div> 
+
+    <div class = "row">
+      <div class="about-column">
+        <p>These are some select examples of projects from my very early years of learning CAD and working in engineering internships.</p>
+      </div>
     </div>
           
     <div class = "row">
-      
       <div class = "column">
         <img src="images/earlyworks/infiniteRose.jpg"></img>
       </div>
@@ -261,7 +299,6 @@
       <div class = "column">
         <img src="images/earlyworks/finished-closed-bottom.JPG"></img>
       </div>
-      
     </div>
 
     <!--Spacer--> <div class = "spacer_row"></div>

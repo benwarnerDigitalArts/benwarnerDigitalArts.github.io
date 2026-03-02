@@ -12,27 +12,30 @@
   <body>
     <!--Header-->
     <div class="row header-row">
-      <div class="header-column">
-        <div class="container">
+      <div class="row">
+        <div class="header-column header-logo-pane">
           <img src="images/self/logoReel.png" class="center header-logo" alt="Logo Reel">
         </div>
-      </div>
-      <div class="header-column header-nav">
-        <div class="container">
+        <div class="header-column header-title">
           <h1 class="center site-title">Ben Warner: Engineering and Digital Arts</h1>
-          <nav id="main-nav" class="nav-buttons">
-            <button  title="Home" class="btn" onclick="navigate('index.html');">Home</button>
-            <button  title="Engineering" class="btn" onclick="navigate('engineering.html');">Engineering</button>
-            <button  title="Digital Arts" class="btn" onclick="navigate('digitalarts.html');">Digital Arts</button>
-            <button  title="Games" class="btn" onclick="navigate('games.html');" style = "background-color: green;">Games!</button>            
-            <button  title="LinkedIn" class="btn" onclick="navigate('https://www.linkedin.com/in/benjamin-b-warner');">LinkedIn</button>
-          </nav>
         </div>
+        <div class="header-column header-logo-pane"></div>
       </div>
-      <div class="header-column">
+      <div class="row">
+        <div class="header-column header-nav">
           <button class="hamburger" aria-label="Menu" aria-expanded="false" aria-controls="main-nav">
             <span class="hamburger-lines"></span>
           </button>
+          <div class="container">
+            <nav id="main-nav" class="nav-buttons">
+              <button  title="Home" class="btn" onclick="navigate('index.html');">Home</button>
+              <button  title="Engineering" class="btn" onclick="navigate('engineering.html');">Engineering</button>
+              <button  title="Digital Arts" class="btn" onclick="navigate('digitalarts.html');">Digital Arts</button>
+              <button  title="Games" class="btn" onclick="navigate('games.html');" style = "background-color: green;">Games!</button>            
+              <button  title="LinkedIn" class="btn" onclick="navigate('https://www.linkedin.com/in/benjamin-b-warner');">LinkedIn</button>
+            </nav>
+          </div>
+        </div>
       </div>
     </div>
     
@@ -40,9 +43,14 @@
 
     <!--Games-->
     <!--PhageShift-->
+    <div class="section-header">
+      <div class="gradient-border">
+        <h3>PhageShift:</h3>
+      </div>
+    </div>
+
     <div class = "row">
       <div class="about-column">
-        <h3>PhageShift:</h3>
           <p>The brain child of a team of three: Hayden, Derek, and me (Ben).</p>
           <p>This game features randomly generated obstacles, collectibles, and enemies. The enemies have some AI path finding and seek to destroy the Phage.</p>
           <p>Summary: A Bacteriophage, for some reason, decides to fight Coronavirus. Shoot to kill and get in the bloodstream to progress! After each stage, the field grows!</p>
@@ -61,9 +69,14 @@
     <!--Spacer--> <div class = "spacer_row"></div>
 
     <!--SpiderCrane-->
+    <div class="section-header">
+      <div class="gradient-border">
+        <h3>SpiderCrane:</h3>
+      </div>
+    </div>
+
     <div class = "row">
       <div class="about-column">
-        <h3>SpiderCrane - on the Web:</h3>
         <p>I created this game with the goal of implementing some crane behaviors, but added some of my own variations on the standard crane concept.</p>
         <p>Instead, I thought it would be amusing to make a spider with the front legs behaving as cranes. This was more complicated than necessary, yet amusing regardless.</p>
         <p>Summary: Pick up the flies that jiggle around randomly and eat them to win! Crawl around, switch modes, or switch front legs which act as the "cranes".</p>
@@ -82,9 +95,13 @@
     <!--Spacer--> <div class = "spacer_row"></div>
 
     <!--aMAZEing-->
+    <div class="section-header">
+      <div class="gradient-border">
+        <h3>aMAZEing:</h3>
+      </div>
+    </div>
     <div class = "row"> 
       <div class="about-column" >
-        <h3>aMAZEing:</h3>
           <p>I created this game with the goal of demonstrating basic controls and spawning objects in a maze-like experience.</p>
           <p>Of course, I tried to put an interesting spin on it... I am egg-static at the results!</p>
           <p>Summary: An egg rolls through a "fridge" to gather ingredients. The fridge opens after collecting enough items for an omelette, but what happens next!?</p>
