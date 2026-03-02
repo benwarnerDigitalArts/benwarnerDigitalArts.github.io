@@ -306,7 +306,8 @@ img:hover {
     color: white;
     padding: 0.1rem;
     flex: 1 1 100%;
-    max-width: 100%;
+    margin: auto;
+    max-width: 99.75%;
     --borderWidth: 2px;
     background: #222;
     position: relative;
