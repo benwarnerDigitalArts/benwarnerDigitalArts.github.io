@@ -164,26 +164,42 @@ ul{
     cursor: pointer;
     padding: 0.4rem;
 }
+/* three-bar icon using the element plus pseudo-elements */
 .hamburger .hamburger-lines {
     display: inline-block;
     width: 24px;
-    height: 16px;
-    position: relative;
-}
-.hamburger .hamburger-lines::before,
-.hamburger .hamburger-lines::after,
-.hamburger .hamburger-lines span {
-    content: '';
-    display: block;
-    height: 2px;
+    height: 2px;            /* middle bar */
     background: #fff;
-    margin: 5px 0;
+    position: relative;
     transition: transform 0.2s ease, opacity 0.2s ease;
 }
+.hamburger .hamburger-lines::before,
+.hamburger .hamburger-lines::after {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    background: #fff;
+    left: 0;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+.hamburger .hamburger-lines::before { top: -6px; }
+.hamburger .hamburger-lines::after  { top: 6px; }
 
 /* when nav is open, show nav on small screens */
 .header-nav.nav-open .nav-buttons {
     display: flex;
+}
+
+/* hamburger transforms into X when menu is active/open */
+.header-nav.nav-open .hamburger .hamburger-lines {
+    background: transparent;
+}
+.header-nav.nav-open .hamburger .hamburger-lines::before {
+    transform: translateY(6px) rotate(145deg);
+}
+.header-nav.nav-open .hamburger .hamburger-lines::after {
+    transform: translateY(-6px) rotate(-145deg);
 }
 
 /* override default .btn positioning inside nav so they flow normally */
