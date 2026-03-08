@@ -1,6 +1,6 @@
 body{
     font-family: "Times New Roman", Times, serif;
-    background-image: linear-gradient(to bottom right, green, #222);
+    background-image: radial-gradient(circle at bottom center, white, #222);
     margin: 0% 5%;
     background-attachment: fixed;
 }
@@ -59,7 +59,7 @@ ul{
     padding: 0.5rem;
     flex: 1 1 25%;
     max-width: 25%;
-    border: 2px solid rgb(0, 250, 0);
+    border: 2px solid gray;
     border-style: ridge;
 }
 .project_btn_column {
@@ -67,7 +67,7 @@ ul{
     padding: 0.5rem;
     flex: 1 1 33.33%;
     max-width: 33.33%;
-    border: 2px solid rgb(0, 250, 0);
+    border: 2px solid gray;
     border-style: ridge;
     
 }
@@ -125,7 +125,7 @@ ul{
     top: 0;
     z-index: 9;
     background-color: #222;
-    border: 2px solid rgb(0, 250, 0);
+    border: 2px solid gray;
     border-style: ridge;
 }
 
@@ -231,7 +231,7 @@ ul{
     background-color: #222;
     color: white;
     padding: 0.5rem;
-    border: 2px solid rgb(0, 250, 0);
+    border: 2px solid gray;
     border-style: ridge;
 }
 
@@ -240,7 +240,7 @@ ul{
     background-color: #222;
     color: white;
     padding: 0.5rem;
-    border: 2px solid rgb(0, 250, 0);
+    border: 2px solid gray;
     border-style: ridge;
 }
 
