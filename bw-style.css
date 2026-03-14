@@ -150,7 +150,7 @@ ul{
 
 /* navigation buttons container */
 .nav-buttons {
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     justify-content: center;
     gap: 0.5rem;
@@ -158,7 +158,7 @@ ul{
 
 /* hamburger button (hidden on desktop) */
 .hamburger {
-    display: none;
+    display: block;
     background: transparent;
     border: none;
     cursor: pointer;
@@ -318,6 +318,7 @@ img:hover {
     background-color: rgba(0, 250, 15, 0.75);
 }
 
+/* gradient border effect */
 .gradient-border {
     color: white;
     padding: 0.1rem;
