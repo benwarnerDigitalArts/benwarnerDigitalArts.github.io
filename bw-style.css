@@ -282,6 +282,8 @@ img:hover {
 }
 
 dialog {
+  height: 80%;
+  width: 80%;
   border-radius: 10px;
   background: white;
 }
@@ -291,13 +293,8 @@ dialog::backdrop {
 }
 
 dialog img {
-  height: 100%;
-}
-
-dialog button {
-  display: block;
-  margin: 10px auto;
-  cursor: pointer;
+  height: 70vh;
+  object-fit: contain;
 }
 
 dialog[open] {

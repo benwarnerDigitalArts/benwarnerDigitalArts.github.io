@@ -32,22 +32,20 @@ if (isDesktop) {
   const images = document.querySelectorAll("img");
   const dialog = document.createElement("dialog");
   const img = document.createElement("img");
-  const close = document.createElement("button");
-
+  const desc = document.createElement("text");
+  dialog.style.textAlign = 'center';
 
   dialog.appendChild(img);
-  dialog.appendChild(close);
+  dialog.appendChild(desc);
   document.body.appendChild(dialog);
 
   images.forEach((image) => {
     image.addEventListener("click", () => {
       img.src = image.src;
-      close.textContent = image.alt;
+      desc.textContent = image.title;
       dialog.showModal();
     });
   });
-  
-  close.addEventListener("click", () => dialog.close());
 
   dialog.addEventListener("click", (event) => {
     const dialogDimensions = dialog.getBoundingClientRect();
@@ -60,4 +58,10 @@ if (isDesktop) {
       dialog.close();
     }
   });
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
 }
