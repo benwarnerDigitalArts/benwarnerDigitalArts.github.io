@@ -32,15 +32,36 @@ if (isDesktop) {
   const images = document.querySelectorAll("img");
   const dialog = document.createElement("dialog");
   const img = document.createElement("img");
-  const desc = document.createElement("text");
+  const desc = document.createElement("p");
+  const spacer = document.createElement("p");
+  const closeBtn = document.createElement("button");
+  const leftArrow = document.createElement("button");
+  const rightArrow = document.createElement("button");
   dialog.style.textAlign = 'center';
 
+  let currentIndex = 0;
+
+  closeBtn.textContent = "Close";
+  leftArrow.textContent = "←";
+  rightArrow.textContent = "→";
+  spacer.textContent = " ";
+  dialog.appendChild(leftArrow);
+  dialog.appendChild(closeBtn);
+  dialog.appendChild(rightArrow);
+  dialog.appendChild(spacer);
   dialog.appendChild(img);
   dialog.appendChild(desc);
   document.body.appendChild(dialog);
 
-  images.forEach((image) => {
+  function openModal(src, title) {
+    img.src = src;
+    desc.textContent = title;
+    dialog.showModal();
+  }
+
+  images.forEach((image,index) => {
     image.addEventListener("click", () => {
+      currentIndex = index;
       img.src = image.src;
       desc.textContent = image.title;
       dialog.showModal();
@@ -58,10 +79,20 @@ if (isDesktop) {
       dialog.close();
     }
   });
-}
 
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
+  rightArrow.addEventListener("click", () => {
+    currentIndex = (currentIndex + 1);
+    const nextImg = images[currentIndex];
+    openModal(nextImg.src, nextImg.title);
+  });
+
+  leftArrow.addEventListener("click", () => {
+    currentIndex = (currentIndex - 1);
+    const prevImg = images[currentIndex];
+    openModal(prevImg.src, prevImg.title);
+  });
+
+  closeBtn.addEventListener("click", () => {
+    dialog.close();
+  });
 }
