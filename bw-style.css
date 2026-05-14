@@ -277,7 +277,6 @@ video {
 img:hover {
   position: relative;
   z-index: 2;
-  object-fit: cover;
   overflow: visible;
 }
 
